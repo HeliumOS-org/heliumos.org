@@ -2,7 +2,7 @@
 /dist/
 /heliumos_website/db.sqlite3
 /heliumos_website/node_modules/
-/.idea/
+/.idea/*
 !/.idea/runConfigurations/
 /heliumos_website/www/static/www/styles.css
 *__pycache__

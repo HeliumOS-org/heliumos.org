@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "heliumos-website"
+version = "0.1.0"
+description = ""
+authors = ["Isaac Beverly <imbev@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "heliumos_website"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.1"
+django-distill = "^3.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

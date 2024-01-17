@@ -1,7 +1,20 @@
 {% extends 'www/base.html' %}
+{% load static %}
 
 {% block title %}Home{{ block.super }}{% endblock %}
 
 {% block main %}
-HeliumOS
+    <header class="bg-base-200 w-screen flex justify-center">
+        <div class="hero max-w-screen-xl">
+            <div class="hero-content flex-col lg:flex-row-reverse p-14 sm:p-20">
+                <img src="{% static 'www/images/mockup-laptop-color.svg' %}"
+                     class="max-w-48 sm:max-w-sm w-auto rounded-lg m-10 sm:m-20"/>
+                <div>
+                    <h1 class="text-5xl font-bold">HeliumOS 1.0</h1>
+                    <p class="py-6">A stable, lightweight, and easy-to-use operating system for your devices.</p>
+                    <button class="btn btn-primary text-base-100">Get HeliumOS</button>
+                </div>
+            </div>
+        </div>
+    </header>
 {% endblock %}

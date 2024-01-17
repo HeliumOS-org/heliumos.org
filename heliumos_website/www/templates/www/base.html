@@ -8,69 +8,73 @@
     <link rel="icon" type="image/svg" href="{% static 'www/images/logo-color.svg' %}">
     <link href="{% static 'www/styles.css' %}" rel="stylesheet">
 </head>
-<body class="flex flex-col items-center bg-base-100">
-<nav class="navbar bg-base-100 max-w-screen-xl">
-    <div class="navbar-start">
-        <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                     stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
-                </svg>
+<body class="flex flex-col bg-base-100">
+<nav class="flex justify-center">
+    <div class="navbar max-w-screen-xl">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16"/>
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Blog</a></li>
+                    <li>
+                        <a>About</a>
+                        <ul class="p-2">
+                            <li><a>FAQ</a></li>
+                            <li><a>Source Code</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Help</a>
+                        <ul class="p-2">
+                            <li><a>How-To</a></li>
+                            <li><a>Chat Support</a></li>
+                            <li><a>Bug Report</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <ul tabindex="0" class="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <a class="flex-0 btn btn-lg btn-ghost gap-1 px-2 md:gap-2">
+                <img src="{% static 'www/images/logo-color.svg' %}" alt="HeliumOS Logo" class="w-12 h-12"/>
+                <span class="text-2xl  font-title">HeliumOS</span>
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-lg menu-horizontal px-1">
                 <li><a>Blog</a></li>
                 <li>
-                    <a>About</a>
-                    <ul class="p-2">
-                        <li><a>FAQ</a></li>
-                        <li><a>Source Code</a></li>
-                    </ul>
+                    <details>
+                        <summary>About</summary>
+                        <ul class="p-2">
+                            <li><a>FAQ</a></li>
+                            <li><a>Source Code</a></li>
+                        </ul>
+                    </details>
                 </li>
                 <li>
-                    <a>Help</a>
-                    <ul class="p-2">
-                        <li><a>How-To</a></li>
-                        <li><a>Chat Support</a></li>
-                        <li><a>Bug Report</a></li>
-                    </ul>
+                    <details>
+                        <summary>Help</summary>
+                        <ul class="p-2 w-48">
+                            <li><a>How-To</a></li>
+                            <li><a>Chat Support</a></li>
+                            <li><a>Bug Report</a></li>
+                        </ul>
+                    </details>
                 </li>
             </ul>
         </div>
-        <a class="flex-0 btn btn-lg btn-ghost gap-1 px-2 md:gap-2">
-            <img src="{% static 'www/images/logo-color.svg' %}" alt="HeliumOS Logo" class="w-12 h-12"/>
-            <span class="text-2xl  font-title">HeliumOS</span>
-        </a>
-    </div>
-    <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-lg menu-horizontal px-1">
-            <li><a>Blog</a></li>
-            <li>
-                <details>
-                    <summary>About</summary>
-                    <ul class="p-2">
-                        <li><a>FAQ</a></li>
-                        <li><a>Source Code</a></li>
-                    </ul>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Help</summary>
-                    <ul class="p-2 w-48">
-                        <li><a>How-To</a></li>
-                        <li><a>Chat Support</a></li>
-                        <li><a>Bug Report</a></li>
-                    </ul>
-                </details>
-            </li>
-        </ul>
-    </div>
-    <div class="navbar-end">
-        <a class="btn btn-accent text-base-100 ml-8">Download</a>
+        <div class="navbar-end">
+            <a class="btn btn-accent text-base-100 ml-8">Download</a>
+        </div>
     </div>
 </nav>
-<main class="max-w-screen-xl">
+<main>
     {% block main %}{% endblock %}
 </main>
 </body>

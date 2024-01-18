@@ -9,7 +9,7 @@
     <link href="{% static 'www/styles.css' %}" rel="stylesheet">
 </head>
 <body class="flex flex-col bg-base-100">
-<nav class="flex justify-center">
+<nav class="sticky top-0 flex justify-center bg-base-100 z-30">
     <div class="navbar max-w-screen-xl">
         <div class="navbar-start">
             <div class="dropdown">
@@ -74,11 +74,10 @@
         </div>
     </div>
 </nav>
-<main>
+<main class="z-20">
     {% block main %}{% endblock %}
 </main>
-<footer>
-    <footer class="footer p-10 bg-base-200 text-base-content">
+<footer class="footer p-10 bg-base-200 text-base-content z-10">
   <aside>
     <img src="{% static 'www/images/logo-color.svg' %}" alt="HeliumOS Logo" class="w-12 h-12"/>
     <p>HeliumOS</p>
@@ -100,7 +99,6 @@
     <a class="link link-hover">Chat Support</a>
     <a class="link link-hover">Bug Report</a>
   </nav>
-</footer>
 </footer>
 </body>
 </html>

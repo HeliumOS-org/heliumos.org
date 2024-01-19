@@ -5,3 +5,6 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'www/index.html')
+
+def download(request):
+    return render(request, 'www/download.html')

@@ -1,0 +1,36 @@
+{% extends 'www/base.html' %}
+{% load static %}
+
+{% block title %}Download{{ block.super }}{% endblock %}
+
+{% block main %}
+    <section class="bg-base-200 p-20 flex justify-center">
+    <div class="text-center prose">
+        <h1>Download HeliumOS</h1>
+        <p class="text-left">
+            We offer downloads via http and torrent.
+            For integrity, verify your downloaded file using the provided SHA256-SUM.
+            <a href="https://etcher.balena.io/">Balena Etcher</a> can be used to create bootable installation media.
+            The installation medium (USB Drive) must have the highest boot priority in the UEFI/BIOS settings, see <a href="https://www.wikihow.com/Set-Your-Computer-to-Boot-from-USB-Flash-Drive#Windows">WikiHow</a> for more details.
+        </p>
+    </div>
+    </section>
+    <section class="bg-base-100 p-20 flex justify-center">
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+                <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
+                     class="rounded-xl"/>
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title">HeliumOS 1.0</h2>
+                <p>The latest version of HeliumOS!</p>
+                <a class="link-primary">SHA256-SUM</a>
+                <span>Download Size: X.XGB</span>
+                <div class="card-actions">
+                    <a class="btn btn-primary text-base-100">Download Now</a>
+                    <a class="btn btn-secondary">Torrent</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -22,20 +22,20 @@
                 </div>
                 <ul tabindex="0"
                     class="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Blog</a></li>
+                    <li><a class="btn-disabled">Blog</a></li>
                     <li>
-                        <a>About</a>
+                        <a class="btn-disabled">About</a>
                         <ul class="p-2">
-                            <li><a>FAQ</a></li>
+                            <li><a class="btn-disabled">FAQ</a></li>
                             <li><a href="https://codeberg.org/HeliumOS">Source Code</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a>Help</a>
+                        <a class="btn-disabled">Help</a>
                         <ul class="p-2">
-                            <li><a>How-To</a></li>
+                            <li><a class="btn-disabled">How-To</a></li>
                             <li><a href="https://heliumos.org/support">Chat Support</a></li>
-                            <li><a>Bug Report</a></li>
+                            <li><a href="https://bugs.heliumos.org/">Bug Report</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -47,12 +47,12 @@
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-lg menu-horizontal px-1">
-                <li><a>Blog</a></li>
+                <li><a class="btn-disabled">Blog</a></li>
                 <li>
                     <details>
                         <summary>About</summary>
                         <ul class="p-2">
-                            <li><a>FAQ</a></li>
+                            <li><a class="btn-disabled">FAQ</a></li>
                             <li><a href="https://codeberg.org/HeliumOS">Source Code</a></li>
                         </ul>
                     </details>
@@ -61,9 +61,9 @@
                     <details>
                         <summary>Help</summary>
                         <ul class="p-2 w-48">
-                            <li><a>How-To</a></li>
+                            <li><a class="btn-disabled">How-To</a></li>
                             <li><a href="https://heliumos.org/support">Chat Support</a></li>
-                            <li><a>Bug Report</a></li>
+                            <li><a href="https://bugs.heliumos.org/">Bug Report</a></li>
                         </ul>
                     </details>
                 </li>
@@ -86,18 +86,18 @@
         <header class="footer-title">HeliumOS</header>
         <a href="{% url 'index' %}" class="link link-hover">Home</a>
         <a href="{% url 'download' %}" class="link link-hover">Download</a>
-        <a class="link link-hover">Blog</a>
+        <a class="{% comment %}link link-hover{% endcomment %}">Blog</a>
     </nav>
     <nav>
         <header class="footer-title">About</header>
-        <a class="link link-hover">FAQ</a>
+        <a class="{% comment %}link link-hover{% endcomment %}">FAQ</a>
         <a href="https://codeberg.org/HeliumOS" class="link link-hover">Source Code</a>
     </nav>
     <nav>
         <header class="footer-title">Help</header>
-        <a class="link link-hover">How-To</a>
+        <a class="{% comment %}link link-hover{% endcomment %}">How-To</a>
         <a href="https://heliumos.org/support" class="link link-hover">Chat Support</a>
-        <a class="link link-hover">Bug Report</a>
+        <a href="https://bugs.heliumos.org/" class="link link-hover">Bug Report</a>
     </nav>
 </footer>
 </body>

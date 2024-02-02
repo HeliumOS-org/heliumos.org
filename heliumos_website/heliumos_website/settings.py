@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'www',
     'django_distill',
+    'django_extensions'
 ]
 
 MIDDLEWARE = [

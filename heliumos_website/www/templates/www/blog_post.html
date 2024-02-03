@@ -19,7 +19,7 @@
             <h2 class="text-center">{{ post.title }}</h2>
             <p class="text-center">{{ post.create_date }}</p>
             <p>{{ post.summary }}</p>
-            <p>{{ post.content }}</p>
+            <p>{{ post.content | safe }}</p>
             <p class="text-center flex flex-col sm:flex-row justify-between">
                 <a href="{% url 'blog' %}" class="link">Return to blog</a>
                 <a href="{% url 'feed' %}" class="link">RSS Feed</a>

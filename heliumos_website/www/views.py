@@ -56,13 +56,15 @@ class BlogFeed(Feed):
         return reverse('blog_post', args=[item.slug])
 
 def release_list(request, type_):
-    alpha_releases = Release.objects.filter(is_alpha=True)
-    beta_releases = Release.objects.filter(is_beta=True)
+    alpha_releases = Release.objects.filter(is_alpha=True, is_featured=True)
+    beta_releases = Release.objects.filter(is_beta=True, is_featured=True)
     title: str
     if type_ == "pre-release":
         title = "Download Pre-Release"
+    no_releases = len(alpha_releases) + len(beta_releases) == 0
     context = {
         "title": title,
-        "pre_releases": [beta_releases, alpha_releases]
+        "pre_releases": [beta_releases, alpha_releases],
+        "no_releases": no_releases,
     }
     return render(request, "www/release_list.html", context)

@@ -6,3 +6,4 @@
 !/.idea/runConfigurations/
 /heliumos_website/www/static/www/styles.css
 *__pycache__
+*node_modules

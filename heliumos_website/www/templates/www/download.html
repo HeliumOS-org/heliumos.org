@@ -35,7 +35,8 @@
                     <span>Download Size: {{ release.file_size }}GB</span>
                     <div class="card-actions">
                         <a class="btn btn-primary text-base-100" href="{{ release.download_url }}">Download Now</a>
-                        <a class="btn btn-secondary" href="{{ release.torrent_url }}">Torrent</a>
+                        <a class="btn btn-secondary {% if release.torrent_url == "about:blank" %}btn-disabled{% endif %}"
+                           href="{{ release.torrent_url }}">Torrent</a>
                     </div>
                 </div>
             </div>

@@ -20,7 +20,7 @@ class Release(models.Model):
     changelog = models.TextField(help_text="Markdown")
     download_url = models.URLField(max_length=200)
     sha256 = models.CharField(max_length=200)
-    torrent_url = models.CharField(max_length=200, help_text="Magnet URL")
+    torrent_url = models.CharField(max_length=200, help_text="Magnet URL", default="about:blank")
     is_alpha = models.BooleanField(help_text="Exclusive with is_beta")
     is_beta = models.BooleanField(help_text="Exclusive with is_alpha")
     is_featured = models.BooleanField()

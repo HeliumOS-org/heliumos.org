@@ -17,6 +17,10 @@ def get_all_blog_posts():
     for post in all_posts:
         yield {'slug': post.slug}
 
+def get_all_release_lists():
+    for type_ in ["pre-release"]:
+        yield {'type_': type_}
+
 urlpatterns = [
     distill_path("", views.index, name="index"),
     distill_path("download/", views.download, name="download"),
@@ -24,5 +28,5 @@ urlpatterns = [
     distill_path("blog/page/<int:page_number>/", views.blog, name="blog", distill_func=get_all_blog_pages),
     distill_path("blog/post/<str:slug>/", views.blog_post, name='blog_post', distill_func=get_all_blog_posts),
     distill_path("feed/", views.BlogFeed(), name="feed"),
-    distill_path("releases/<str:type_>", views.release_list, name="release_list"),
+    distill_path("releases/<str:type_>/", views.release_list, name="release_list", distill_func=get_all_release_lists),
 ]

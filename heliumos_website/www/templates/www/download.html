@@ -17,12 +17,12 @@
             </p>
         </div>
     </section>
-    <section class="bg-base-100 p-20 flex justify-center gap-8">
+    <section class="bg-base-100 sm:p-20 flex flex-col lg:flex-row justify-center gap-8 items-center flex-wrap">
         {% if not releases %}
             No current stable releases.
         {% endif %}
         {% for release in releases %}
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-full sm:w-96 bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
                 <img src="{% static release.image_path %}" alt="v{{ release.version }} screenshot"
                      class="rounded-xl"/>

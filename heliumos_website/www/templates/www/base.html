@@ -29,7 +29,7 @@
                     <li>
                         <a class="btn-disabled">About</a>
                         <ul class="p-2">
-                            <li><a class="btn-disabled">FAQ</a></li>
+                            <li><a href="{% url 'docs' %}#faq">FAQ</a></li>
                             <li><a href="https://codeberg.org/HeliumOS">Source Code</a></li>
                         </ul>
                     </li>
@@ -55,7 +55,7 @@
                     <details>
                         <summary>About</summary>
                         <ul class="p-2">
-                            <li><a class="btn-disabled">FAQ</a></li>
+                            <li><a href="{% url 'docs' %}#faq">FAQ</a></li>
                             <li><a href="https://codeberg.org/HeliumOS">Source Code</a></li>
                         </ul>
                     </details>
@@ -64,7 +64,7 @@
                     <details>
                         <summary>Help</summary>
                         <ul class="p-2 w-48">
-                            <li><a class="btn-disabled">How-To</a></li>
+                            <li><a href="{% url 'docs' %}#how-to">How-To</a></li>
                             <li><a href="https://heliumos.org/support">Chat Support</a></li>
                             <li><a href="https://bugs.heliumos.org/">Bug Report</a></li>
                         </ul>
@@ -100,12 +100,12 @@
     </nav>
     <nav>
         <header class="footer-title">About</header>
-        <a class="{% comment %}link link-hover{% endcomment %}">FAQ</a>
+        <a class="link link-hover" href="{% url 'docs' %}#faq">FAQ</a>
         <a href="https://codeberg.org/HeliumOS" class="link link-hover">Source Code</a>
     </nav>
     <nav>
         <header class="footer-title">Help</header>
-        <a class="{% comment %}link link-hover{% endcomment %}">How-To</a>
+        <a class="link link-hover" href="{% url 'docs' %}#how-to">How-To</a>
         <a href="https://heliumos.org/support" class="link link-hover">Chat Support</a>
         <a href="https://bugs.heliumos.org/" class="link link-hover">Bug Report</a>
     </nav>

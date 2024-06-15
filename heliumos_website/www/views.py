@@ -68,3 +68,6 @@ def release_list(request, type_):
         "no_releases": no_releases,
     }
     return render(request, "www/release_list.html", context)
+
+def docs(request):
+    return render(request, 'www/docs.html')

@@ -22,25 +22,27 @@
             No current stable releases.
         {% endif %}
         {% for release in releases %}
-                <div class="card w-full sm:w-96 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-                <img src="{% static release.image_path %}" alt="v{{ release.version }} screenshot"
-                     class="rounded-xl"/>
-            </figure>
-            <div class="card-body items-center text-center">
-                <h2 class="card-title">HeliumOS v{{ release.version }}</h2>
-                <label for="sha256sum">SHA256-SUM:</label>
-                <input id="sha256sum" type="text" class="input input-bordered" value="{{ release.sha256 }}" readonly/>
-                <span>Download Size: {{ release.file_size }}GB</span>
-                <div class="card-actions">
-                    <a class="btn btn-primary text-base-100" href="{{ release.download_url }}">Download Now</a>
-                    <a class="btn btn-secondary" href="{{ release.torrent_url }}">Torrent</a>
+            <div class="card w-full sm:w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="{% static release.image_path %}" alt="v{{ release.version }} screenshot"
+                         class="rounded-xl"/>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">HeliumOS v{{ release.version }}</h2>
+                    <label for="sha256sum">SHA256-SUM:</label>
+                    <input id="sha256sum" type="text" class="input input-bordered" value="{{ release.sha256 }}"
+                           readonly/>
+                    <span>Download Size: {{ release.file_size }}GB</span>
+                    <div class="card-actions">
+                        <a class="btn btn-primary text-base-100" href="{{ release.download_url }}">Download Now</a>
+                        <a class="btn btn-secondary" href="{{ release.torrent_url }}">Torrent</a>
+                    </div>
                 </div>
             </div>
-        </div>
         {% endfor %}
     </section>
     <section class="bg-base-100 pb-20 flex justify-center gap-8">
-        <a class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" href="{% url 'release_list' 'pre-release' %}">See Pre-Releases</a>
+        <a class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" href="{% url 'release_list' 'pre-release' %}">See
+            Pre-Releases</a>
     </section>
 {% endblock %}

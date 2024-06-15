@@ -1,0 +1,50 @@
+{% extends 'www/base.html' %}
+{% load static %}
+
+{% block title %}Download Pre-Release{{ block.super }}{% endblock %}
+
+{% block main %}
+    <section class="bg-base-200 p-20 flex justify-center">
+        <div class="text-center prose">
+            <h1>{{ title }}</h1>
+            <p class="text-left">
+                These releases are not considered stable and are not suitable for production.
+            </p>
+        </div>
+    </section>
+    <section class="bg-base-100 p-20 flex justify-center">
+        <div class="flex-col content-center">
+            {% if no_releases %}
+                <p>No current pre-releases.</p>
+            {% endif %}
+            {% for releases in pre_releases %}
+                {% for release in releases %}
+                    {% if release.is_featured %}
+                        <div class="card bg-base-100 shadow-xl m-4 p-2">
+                            <div class="card-body items-center text-center sm:flex-row justify-between gap-4">
+                                <h2 class="text-3xl">v{{ release.version }}</h2>
+                                {% if release.is_alpha %}<span class="badge badge-warning">Alpha</span>{% endif %}
+                                {% if release.is_beta %}<span class="badge badge-info">Beta</span>{% endif %}
+                                <div class="flex flex-col">
+                                    <label for="sha256sum">SHA256-SUM:</label>
+                                    <input id="sha256sum" type="text" class="input input-sm input-bordered"
+                                           value="{{ release.sha256 }}" readonly/>
+                                </div>
+                                <div>
+                                    <span>Download Size: {{ release.file_size }}GB</span>
+                                    <div class="flex gap-2">
+                                        <a class="btn btn-primary text-base-100" href="{{ release.download_url }}">Download
+                                            Now</a>
+                                        <a class="btn btn-secondary {% if release.torrent_url == "about:blank" %}btn-disabled{% endif %}"
+                                           href="{{ release.torrent_url }}">Torrent</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

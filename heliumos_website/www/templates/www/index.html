@@ -10,9 +10,9 @@
                 <img src="{% static 'www/images/mockup-laptop-color.svg' %}"
                      class="max-w-48 sm:max-w-sm w-auto rounded-lg m-10 sm:m-20"/>
                 <div>
-                    <h1 class="text-5xl font-bold">HeliumOS 1.0</h1>
-                    <p class="py-6">A stable, lightweight, and easy-to-use operating system for your devices.</p>
-                    <a href="{% url 'download' %}" class="btn btn-primary text-base-100">Get HeliumOS</a>
+                    <h1 class="text-5xl font-bold">HeliumOS 9-Beta</h1>
+                    <p class="py-6">An atomic desktop operating system for your devices.</p>
+                    <a href="{% url 'release_list' 'pre-release' %}" class="btn btn-primary text-base-100">Get HeliumOS</a>
                 </div>
             </div>
         </div>
@@ -20,52 +20,26 @@
     <section class="bg-base-100 w-full flex flex-col items-center mt-16 mb-32">
         <div class="max-w-screen-xl">
             <span class="prose p-8 text-center"><h2>Open Source Software</h2></span>
-            <div class="flex flex-col lg:flex-row gap-8 py-8 sm:p-8">
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="{% static 'www/images/onlyoffice-screenshot.webp' %}"
-                                 alt="ONLYOFFICE Desktop Editors"/></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Be Productive</h2>
-                        <p>Create Microsoft Office compatible Documents, Spreadsheets, and more with <strong>ONLYOFFICE
-                            Desktop Editors</strong></p>
-                    </div>
-                </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="{% static 'www/images/brave-browser-screenshot.webp' %}" alt="Brave Browser"/>
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Explore</h2>
-                        <p>Browse the web privately and ad-free with <strong>Brave Browser</strong></p>
-                    </div>
-                </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="{% static 'www/images/vlc-screenshot.webp' %}" alt="VLC Media Player"/></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Watch</h2>
-                        <p>Enjoy your movies and videos with <br/> <strong>VLC Media Player</strong></p>
-                    </div>
-                </div>
-            </div>
             <div class="flex flex-col lg:flex-row gap-8 sm:p-8">
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="{% static 'www/images/synaptic-screenshot.webp' %}" alt="Synaptic"/></figure>
+                    <figure><img src="{% static 'www/images/software-center.webp' %}" alt="Synaptic"/></figure>
                     <div class="card-body">
-                        <h2 class="card-title">System Software</h2>
-                        <p>Modify the system's installed Debian packages with <strong>Synaptic</strong></p>
+                        <h2 class="card-title">Install Apps!</h2>
+                        <p>Take your pick from thousands of Linux applications using the <strong>Software Center</strong></p>
                     </div>
                 </div>
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="{% static 'www/images/discover-screenshot.webp' %}" alt="Plasma Discover"/>
+                    <figure><img src="{% static 'www/images/gnome-desktop.webp' %}" alt="Plasma Discover"/>
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Apps</h2>
-                        <p>Install sandboxed desktop applications with <strong>Discover</strong></p>
+                        <h2 class="card-title">Work and Play! </h2>
+                        <p>Be productive and have fun with a slightly customized <strong>GNOME Desktop</strong></p>
                     </div>
                 </div>
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="{% static 'www/images/distrobox-screenshot.webp' %}" alt="Distrobox"/></figure>
+                    <figure><img src="{% static 'www/images/distrobox.webp' %}" alt="Distrobox"/></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Containers</h2>
+                        <h2 class="card-title">Develop!</h2>
                         <p>Use tools from a variety of containerized Linux Distributions with <strong>Distrobox</strong>
                         </p>
                     </div>

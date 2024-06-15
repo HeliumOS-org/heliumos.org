@@ -3,7 +3,7 @@ from django.contrib.syndication.views import Feed
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
 
-from .models import BlogPost
+from .models import BlogPost, Release
 
 
 # Create your views here.
@@ -13,7 +13,11 @@ def index(request):
 
 
 def download(request):
-    return render(request, 'www/download.html')
+    stable_releases = Release.objects.filter(is_alpha=False, is_beta=False, is_featured=True)
+    context = {
+        "releases": stable_releases,
+    }
+    return render(request, 'www/download.html', context)
 
 
 def blog(request, page_number=1):
@@ -50,3 +54,20 @@ class BlogFeed(Feed):
 
     def item_link(self, item):
         return reverse('blog_post', args=[item.slug])
+
+def release_list(request, type_):
+    alpha_releases = Release.objects.filter(is_alpha=True, is_featured=True)
+    beta_releases = Release.objects.filter(is_beta=True, is_featured=True)
+    title: str
+    if type_ == "pre-release":
+        title = "Download Pre-Release"
+    no_releases = len(alpha_releases) + len(beta_releases) == 0
+    context = {
+        "title": title,
+        "pre_releases": [beta_releases, alpha_releases],
+        "no_releases": no_releases,
+    }
+    return render(request, "www/release_list.html", context)
+
+def docs(request):
+    return render(request, 'www/docs.html')

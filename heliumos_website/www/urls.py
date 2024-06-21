@@ -1,8 +1,10 @@
 from django.core.paginator import Paginator
+from django.contrib.sitemaps.views import sitemap
 from django_distill import distill_path
 
 from . import views
 from .models import BlogPost
+from .sitemaps import sitemaps
 
 
 def get_all_blog_pages():
@@ -23,6 +25,7 @@ def get_all_release_lists():
 
 urlpatterns = [
     distill_path("", views.index, name="index"),
+    distill_path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="django.contrib.sitemaps.views.sitemap"),
     distill_path("download/", views.download, name="download"),
     distill_path("blog/", views.blog, name="blog"),
     distill_path("blog/page/<int:page_number>/", views.blog, name="blog", distill_func=get_all_blog_pages),

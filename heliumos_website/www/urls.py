@@ -27,7 +27,7 @@ urlpatterns = [
     distill_path("blog/", views.blog, name="blog"),
     distill_path("blog/page/<int:page_number>/", views.blog, name="blog", distill_func=get_all_blog_pages),
     distill_path("blog/post/<str:slug>/", views.blog_post, name='blog_post', distill_func=get_all_blog_posts),
-    distill_path("feed/", views.BlogFeed(), name="feed"),
+    distill_path("feed.xml", views.BlogFeed(), name="feed"),
     distill_path("releases/<str:type_>/", views.release_list, name="release_list", distill_func=get_all_release_lists),
     distill_path("docs/", views.docs, name="docs"),
 ]

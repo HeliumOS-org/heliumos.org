@@ -10,6 +10,7 @@ class BlogPost(models.Model):
     content = models.TextField()
     slug = AutoSlugField(populate_from=["title"])
     create_date = models.DateField()
+    is_published = models.BooleanField(default=False)
 
     def __str__(self):
         return f"{self.__class__.__name__}: {self.slug}"

@@ -9,6 +9,8 @@ help:
 	@echo make build - build for production
 	@echo make deps - generate requirements.txt from pyproject.toml using uv
 	@echo make sync - sync venv with requirements.txt using uv, install npm dependencies
+	@echo make dump - dump data from db to json files
+	@echo make load - load data to db from json files
 
 devpy:
 	${python} heliumos_website/manage.py runserver
@@ -27,3 +29,13 @@ deps:
 sync:
 	${uv} pip sync requirements.txt
 	${npm} install
+
+dump:
+	${python} heliumos_website/manage.py dumpdata www.Release > data/release.json
+	${python} heliumos_website/manage.py dumpdata www.BlogPost > data/blog_post.json
+	${python} heliumos_website/manage.py dumpdata sites.Site > data/sites.json
+
+load:
+	${python} heliumos_website/manage.py loaddata data/release.json
+	${python} heliumos_website/manage.py loaddata data/blog_post.json
+	${python} heliumos_website/manage.py loaddata data/sites.json

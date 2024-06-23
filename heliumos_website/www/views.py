@@ -3,6 +3,8 @@ from django.contrib.syndication.views import Feed
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse
 
+from markdown import markdown
+
 from .models import BlogPost, Release
 
 
@@ -32,8 +34,10 @@ def blog(request, page_number=1):
 
 def blog_post(request, slug):
     post = get_object_or_404(BlogPost, slug=slug)
+    rendered_content = markdown(post.content)
     context = {
-        "post": post
+        "post": post,
+        "rendered_content": rendered_content
     }
     return render(request, 'www/blog_post.html', context)
 

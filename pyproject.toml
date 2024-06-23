@@ -4,7 +4,8 @@ version = "0.1.0"
 dependencies = [
     "django==5",
     "django-distill==3",
-    "django-extensions==3"
+    "django-extensions==3",
+    "markdown==3.6"
 ]
 
 [build-system]

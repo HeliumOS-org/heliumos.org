@@ -16,6 +16,8 @@ django-extensions==3.0.0
     # via heliumos-website (pyproject.toml)
 idna==3.7
     # via requests
+markdown==3.6
+    # via heliumos-website (pyproject.toml)
 requests==2.32.3
     # via django-distill
 six==1.16.0

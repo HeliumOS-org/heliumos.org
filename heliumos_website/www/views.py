@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.core.paginator import Paginator
 from django.contrib.syndication.views import Feed
 from django.shortcuts import render, get_object_or_404
@@ -35,9 +37,11 @@ def blog(request, page_number=1):
 def blog_post(request, slug):
     post = get_object_or_404(BlogPost, slug=slug)
     rendered_content = markdown(post.content)
+    create_data_iso8601 = datetime(post.create_date.year, post.create_date.month, post.create_date.day).isoformat()
     context = {
         "post": post,
-        "rendered_content": rendered_content
+        "rendered_content": rendered_content,
+        "create_data_iso8601": create_data_iso8601
     }
     return render(request, 'www/blog_post.html', context)
 

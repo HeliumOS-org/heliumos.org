@@ -33,4 +33,5 @@ urlpatterns = [
     distill_path("feed.xml", views.BlogFeed(), name="feed"),
     distill_path("releases/<str:type_>/", views.release_list, name="release_list", distill_func=get_all_release_lists),
     distill_path("docs/", views.docs, name="docs"),
+    distill_path("roadmap/", views.roadmap, name="roadmap")
 ]

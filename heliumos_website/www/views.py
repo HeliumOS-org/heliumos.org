@@ -79,3 +79,6 @@ def release_list(request, type_):
 
 def docs(request):
     return render(request, 'www/docs.html')
+
+def roadmap(request):
+    return render(request, "www/roadmap.html")

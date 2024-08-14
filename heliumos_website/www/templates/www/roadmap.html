@@ -1,0 +1,111 @@
+{% extends 'www/base.html' %}
+{% load static %}
+
+{% block title %}Roadmap{{block.super }}{% endblock %}
+
+{% block main %}
+<section class="bg-base-200 p-20 flex justify-center">
+  <div class="text-center prose">
+    <h1>Roadmap</h1>
+    <p class="text-left">Current progress and future plans for HeliumOS</p>
+  </div>
+</section>
+<section class="bg-base-100 p-20 flex justify-center">
+  <div class="flex-col justify-center">
+    <div class="text-left prose sm:min-w-1/2 flex flex-grow flex-col gap-4">
+      <ul class="timeline timeline-vertical">
+        <li>
+          <div class="timeline-start timeline-box">
+            <time class="font-mono italic">June 2024</time>
+            <p class="font-bold">HeliumOS v9-Alpha available</p>
+            <p>
+              Based on CentOS Stream 9, this release establishes HeliumOS as an atomic Linux distribution using bootc for immutability.
+            </p>
+          </div>
+          {% include "www/snippets/timeline_point_done.html" %}
+          <hr class="bg-primary" />
+        </li>
+        <li>
+          <hr class="bg-primary" />
+          {% include "www/snippets/timeline_point_done.html" %}
+          <div class="timeline-end timeline-box">
+            <time class="font-mono italic">July 2024</time>
+            <p class="font-bold">HeliumOS rebase on AlmaLinux</p>
+            <p>
+              Among other changes, HeliumOS rebases on AlmaLinux 9.4.
+              This change stabilizes the Linux kernel and other software, allowing for additional features.
+            </p>
+          </div>
+          <hr class="bg-primary" />
+        </li>
+        <li>
+          <hr class="bg-primary" />
+          {% include "www/snippets/timeline_point_not_done.html" %}
+          <div class="timeline-start timeline-box">
+            <time class="font-mono italic">August 2024</time>
+            <p class="font-bold">Exciting improvements</p>
+            <p>
+                This update to the HeliumOS 9 Alpha adds the "System" Images app.
+                Many bugs such as the slow session exit bug are patched.
+            </p>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          {% include "www/snippets/timeline_point_not_done.html" %}
+          <div class="timeline-end timeline-box">
+            <time class="font-mono italic">Q3 2024</time>
+            <p class="font-bold">Future plans</p>
+            <p>
+                <ul>
+                    <li>Change image using "System Images" app</li>
+                </ul>
+            </p>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          {% include "www/snippets/timeline_point_not_done.html" %}
+          <div class="timeline-start timeline-box">
+            <time class="font-mono italic">Q4 2024</time>
+            <p class="font-bold">Future plans</p>
+            <p>
+                <ul>
+                    <li>Support for Nvidia GPUs</li>
+                    <li>HeliumOS 9 Beta Release</li>
+                </ul>
+            </p>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          {% include "www/snippets/timeline_point_not_done.html" %}
+          <div class="timeline-end timeline-box">
+            <time class="font-mono italic">2025</time>
+            <p class="font-bold">Future plans</p>
+            <p>
+                <ul>
+                    <li>HeliumOS 9 rebase on AlmaLinux 9.5</li>
+                    <li>Release HeliumOS 10 based on AlmaLinux 10</li>
+                    <li>Publication of hardware compatibility information</li>
+                </ul>
+            </p>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          {% include "www/snippets/timeline_point_not_done.html" %}
+        </li>
+      </ul>
+    </div>
+    <p>
+      If you have any feedback for improvement, please let us know in the
+      <a href="https://matrix.to/#/#heliumos:matrix.org" class="link">HeliumOS Matrix Space</a>!
+    </p>
+  </div>
+</section>
+{% endblock %}

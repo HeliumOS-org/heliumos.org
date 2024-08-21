@@ -21,6 +21,8 @@ RUN make deps
 
 RUN make sync
 
+RUN make migrate
+
 RUN make load
 
 RUN make build

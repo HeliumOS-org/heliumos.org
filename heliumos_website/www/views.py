@@ -7,7 +7,7 @@ from django.urls import reverse
 
 from markdown import markdown
 
-from .models import BlogPost, Release
+from .models import BlogPost, QuestionAnswer, Release
 
 
 # Create your views here.
@@ -78,7 +78,17 @@ def release_list(request, type_):
     return render(request, "www/release_list.html", context)
 
 def docs(request):
-    return render(request, 'www/docs.html')
+    qas = []
+    for qa in QuestionAnswer.objects.all():
+        obj = QuestionAnswer(
+            question = qa.question,
+            answer = markdown(qa.answer)
+        )
+        qas.append(obj)
+    context = {
+        "qas": qas
+    }
+    return render(request, 'www/docs.html', context)
 
 def roadmap(request):
     return render(request, "www/roadmap.html")

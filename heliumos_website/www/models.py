@@ -37,3 +37,12 @@ class Release(models.Model):
     class Meta:
         ordering = ["-release_date"]
 
+class QuestionAnswer(models.Model):
+    question = models.CharField(max_length=200)
+    answer = models.TextField(help_text="Markdown")
+
+    def __str__(self):
+        return f"{self.__class__.__name__}: {self.question}"
+
+    class Meta:
+        ordering = ["question"]

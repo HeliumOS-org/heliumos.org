@@ -1,1 +1,10 @@
-[{"model": "sites.site", "pk": 1, "fields": {"domain": "www.heliumos.org", "name": "www.heliumos.org"}}]
+[
+    {
+        "model": "sites.site",
+        "pk": 1,
+        "fields": {
+            "domain": "www.heliumos.org",
+            "name": "www.heliumos.org"
+        }
+    }
+]

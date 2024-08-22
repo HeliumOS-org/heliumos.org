@@ -1,1 +1,19 @@
-[{"model": "www.release", "pk": 1, "fields": {"version": "9-Alpha", "changelog": "N/A", "download_url": "https://dl.heliumos.org/heliumos/releases/test/9_Alpha/HeliumOS-9-latest-x86_64-boot.iso", "sha256": "b9b608d5cb1a1a838258446160669014f5872ab256f5733088acaf32760b2722", "torrent_url": "about:blank", "is_alpha": true, "is_beta": false, "is_featured": true, "image_path": "/www/images/logo-color.svg", "file_size": 1.0, "release_date": "2024-06-21"}}]
+[
+    {
+        "model": "www.release",
+        "pk": 1,
+        "fields": {
+            "version": "9-Alpha",
+            "changelog": "N/A",
+            "download_url": "https://dl.heliumos.org/heliumos/releases/test/9_Alpha/HeliumOS-9-latest-x86_64-boot.iso",
+            "sha256": "b9b608d5cb1a1a838258446160669014f5872ab256f5733088acaf32760b2722",
+            "torrent_url": "about:blank",
+            "is_alpha": true,
+            "is_beta": false,
+            "is_featured": true,
+            "image_path": "/www/images/logo-color.svg",
+            "file_size": 1.0,
+            "release_date": "2024-06-21"
+        }
+    }
+]

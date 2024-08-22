@@ -40,9 +40,13 @@ migrate:
 
 dump:
 	${python} heliumos_website/manage.py dumpdata www.BlogPost > data/blog_post.json
+	${python} -m json.tool data/blog_post.json data/blog_post.json
 	${python} heliumos_website/manage.py dumpdata www.QuestionAnswer > data/question_answer.json
+	${python} -m json.tool data/question_answer.json data/question_answer.json
 	${python} heliumos_website/manage.py dumpdata www.Release > data/release.json
+	${python} -m json.tool data/release.json data/release.json
 	${python} heliumos_website/manage.py dumpdata sites.Site > data/sites.json
+	${python} -m json.tool data/sites.json data/sites.json
 
 load:
 	${python} heliumos_website/manage.py loaddata data/blog_post.json

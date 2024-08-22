@@ -40,9 +40,10 @@ class Release(models.Model):
 class QuestionAnswer(models.Model):
     question = models.CharField(max_length=200)
     answer = models.TextField(help_text="Markdown")
+    order = models.PositiveSmallIntegerField()
 
     def __str__(self):
         return f"{self.__class__.__name__}: {self.question}"
 
     class Meta:
-        ordering = ["question"]
+        ordering = ["order"]

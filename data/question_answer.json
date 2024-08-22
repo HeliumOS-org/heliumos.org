@@ -4,7 +4,8 @@
         "pk": 1,
         "fields": {
             "question": "Why is HeliumOS \"Atomic\"?",
-            "answer": "The most reliable operating systems use an atomic system for core software distribution. In the case of HeliumOS, new updates are distributed via OCI-Compatible <a href=\"https://containers.github.io/bootc/\" class=\"link\">BootC</a> images. Regardless of power failures or similar interruptions, your system will never be in a broken partially-updated state."
+            "answer": "The most reliable operating systems use an atomic system for core software distribution. In the case of HeliumOS, new updates are distributed via OCI-Compatible <a href=\"https://containers.github.io/bootc/\" class=\"link\">BootC</a> images. Regardless of power failures or similar interruptions, your system will never be in a broken partially-updated state.",
+            "order": 20
         }
     },
     {
@@ -12,7 +13,8 @@
         "pk": 2,
         "fields": {
             "question": "Can I run Windows applications and games?",
-            "answer": "Although much software that targets Windows does not work on Linux-based operating systems\r\n                        such as HeliumOS, many applications and games work perfectly or to a usable degree.\r\n                        <a href=\"https://usebottles.com/\" class=\"link\">Bottles</a> can be used to run many applications\r\n                        with minimal change to performance resource requirements.\r\n                        Approximately 80% of games on the popular <a href=\"https://store.steampowered.com/\">Steam</a>\r\n                        gaming platform work using the official Proton/Steam Play Compatibility mode.\r\n                        As a last resort, those with sufficiently powerful hardware can run the entire Windows\r\n                        operating system within a virtual machine using\r\n                        <a href=\"https://apps.gnome.org/Boxes/\" class=\"link\">Boxes</a>.\r\n                        Bottles, Steam, and Boxes are all available for installation using the included Software Center."
+            "answer": "Although much software that targets Windows does not work on Linux-based operating systems\r\n                        such as HeliumOS, many applications and games work perfectly or to a usable degree.\r\n                        <a href=\"https://usebottles.com/\" class=\"link\">Bottles</a> can be used to run many applications\r\n                        with minimal change to performance resource requirements.\r\n                        Approximately 80% of games on the popular <a href=\"https://store.steampowered.com/\">Steam</a>\r\n                        gaming platform work using the official Proton/Steam Play Compatibility mode.\r\n                        As a last resort, those with sufficiently powerful hardware can run the entire Windows\r\n                        operating system within a virtual machine using\r\n                        <a href=\"https://apps.gnome.org/Boxes/\" class=\"link\">Boxes</a>.\r\n                        Bottles, Steam, and Boxes are all available for installation using the included Software Center.",
+            "order": 40
         }
     },
     {
@@ -20,7 +22,8 @@
         "pk": 4,
         "fields": {
             "question": "How does HeliumOS compare to other Linux distributions?",
-            "answer": "### Ubuntu\r\n\r\nUbuntu is a commercial Linux distribution based on Debian. Both Ubuntu and HeliumOS focus on providing an easy-to-use desktop experience. Unlike Ubuntu, HeliumOS does not use snap packages and HeliumOS is part of the Red Hat family of Linux distributions.\r\n\r\n### Fedora\r\n\r\nFedora is a community Linux distribution that serves as the upstream for CentOS Stream, Red Hat Enterprise Linux, AlmaLinux, and other distributions. Fedora and the Universal Blue project both offer atomic desktop operating systems based on Fedora. While Fedora has a 13 month lifecycle, HeliumOS has a 10 year lifecycle.\r\n\r\n\r\n### AlmaLinux\r\n\r\nAlmaLinux is an enterprise Linux distribution that is a successor to the original CentOS. HeliumOS is directly based on AlmaLinux and derives many components such as the Linux kernel and GNOME desktop from AlmaLinux. Unlike AlmaLinux, HeliumOS focuses on providing an atomic desktop experience suitable for all users."
+            "answer": "### Ubuntu\r\n\r\nUbuntu is a commercial Linux distribution based on Debian. Both Ubuntu and HeliumOS focus on providing an easy-to-use desktop experience. Unlike Ubuntu, HeliumOS does not use snap packages and HeliumOS is part of the Red Hat family of Linux distributions.\r\n\r\n### Fedora\r\n\r\nFedora is a community Linux distribution that serves as the upstream for CentOS Stream, Red Hat Enterprise Linux, AlmaLinux, and other distributions. Fedora and the Universal Blue project both offer atomic desktop operating systems based on Fedora. While Fedora has a 13 month lifecycle, HeliumOS has a 10 year lifecycle.\r\n\r\n\r\n### AlmaLinux\r\n\r\nAlmaLinux is an enterprise Linux distribution that is a successor to the original CentOS. HeliumOS is directly based on AlmaLinux and derives many components such as the Linux kernel and GNOME desktop from AlmaLinux. Unlike AlmaLinux, HeliumOS focuses on providing an atomic desktop experience suitable for all users.",
+            "order": 30
         }
     },
     {
@@ -28,7 +31,8 @@
         "pk": 5,
         "fields": {
             "question": "What is HeliumOS?",
-            "answer": "### HeliumOS is...\r\n\r\n* An atomic desktop operating system for your devices, designed to empower users without getting in the way.\r\n* Built on top of AlmaLinux, the forever-free enterprise Linux distribution, inheriting its stability, security, and compatibility.\r\n\r\n### HeliumOS offers...\r\n\r\n* A simple and intuitive Linux desktop using GNOME, featuring an easy-to-use interface and seamless user experience.\r\n* An app store with a wide selection of Flatpak packages, providing up-to-date and sandboxed applications that are easy to install and manage.\r\n* A commitment to 10 years of support, improving your system with new features, bugfixes, and security updates throughout the life of your device"
+            "answer": "### HeliumOS is...\r\n\r\n* An atomic desktop operating system for your devices, designed to empower users without getting in the way.\r\n* Built on top of AlmaLinux, the forever-free enterprise Linux distribution, inheriting its stability, security, and compatibility.\r\n\r\n### HeliumOS offers...\r\n\r\n* A simple and intuitive Linux desktop using GNOME, featuring an easy-to-use interface and seamless user experience.\r\n* An app store with a wide selection of Flatpak packages, providing up-to-date and sandboxed applications that are easy to install and manage.\r\n* A commitment to 10 years of support, improving your system with new features, bugfixes, and security updates throughout the life of your device",
+            "order": 10
         }
     }
 ]

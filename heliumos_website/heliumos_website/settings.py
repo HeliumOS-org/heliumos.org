@@ -27,7 +27,7 @@ if DEBUG:
 else:
     SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 
-ALLOWED_HOSTS = ["localhost", "heliumos.org"]
+ALLOWED_HOSTS = ["localhost", "www.heliumos.org"]
 
 # Application definition
 

@@ -17,8 +17,6 @@ COPY . .
 
 RUN uv venv
 
-RUN make deps
-
 RUN make sync
 
 RUN make migrate

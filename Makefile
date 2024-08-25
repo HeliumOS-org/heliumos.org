@@ -26,7 +26,8 @@ build:
 	${python} heliumos_website/manage.py distill-local --force --collectstatic dist
 
 deps:
-	${uv} pip compile pyproject.toml -o requirements.txt
+	${uv} pip compile pyproject.toml -o requirements.txt --generate-hashes
+
 
 sync:
 	${uv} pip sync requirements.txt

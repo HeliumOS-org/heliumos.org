@@ -1,17 +1,16 @@
 FROM quay.io/almalinuxorg/9-base
 
-WORKDIR /build
+WORKDIR /workdir
 
 RUN dnf upgrade -y
 
 RUN dnf install -y \
     make \
     npm \
-    python3-pip
+    python3.12-pip \
+    python3.12-mod_wsgi
 
-RUN python3 -m pip install uv
-
-RUN uv python install 3.12
+RUN python3.12 -m pip install uv
 
 COPY . .
 
@@ -26,9 +25,8 @@ RUN make load
 RUN make build
 
 RUN dnf install -y httpd && \
-    cp -r dist/* /var/www/html/
-
-RUN rm -rdf /build
+    mkdir -p /usr/local/apache2/conf/ && \
+    cp -r httpd.conf /etc/httpd/conf.d/httpd.conf
 
 EXPOSE 80
 CMD httpd -DFOREGROUND

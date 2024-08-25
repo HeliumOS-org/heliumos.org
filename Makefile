@@ -15,7 +15,7 @@ help:
 	@echo make load - load data to db from json files
 
 devpy:
-	${python} heliumos_website/manage.py runserver
+	DEBUG=1 ${python} heliumos_website/manage.py runserver
 
 devcss:
 	${npm} run tw-watch
@@ -23,34 +23,33 @@ devcss:
 build:
 	rm -rdf dist static
 	${npm} run tw-build
-	${python} heliumos_website/manage.py distill-local --force --collectstatic dist
+	DEBUG=1 ${python} heliumos_website/manage.py collectstatic --no-input
 
 deps:
 	${uv} pip compile pyproject.toml -o requirements.txt --generate-hashes
-
 
 sync:
 	${uv} pip sync requirements.txt
 	${npm} install
 
 makemigrations:
-	${python} heliumos_website/manage.py makemigrations
+	DEBUG=1 ${python} heliumos_website/manage.py makemigrations
 
 migrate:
-	${python} heliumos_website/manage.py migrate
+	DEBUG=1 ${python} heliumos_website/manage.py migrate
 
 dump:
-	${python} heliumos_website/manage.py dumpdata www.BlogPost > data/blog_post.json
-	${python} -m json.tool data/blog_post.json data/blog_post.json
-	${python} heliumos_website/manage.py dumpdata www.QuestionAnswer > data/question_answer.json
-	${python} -m json.tool data/question_answer.json data/question_answer.json
-	${python} heliumos_website/manage.py dumpdata www.Release > data/release.json
-	${python} -m json.tool data/release.json data/release.json
-	${python} heliumos_website/manage.py dumpdata sites.Site > data/sites.json
-	${python} -m json.tool data/sites.json data/sites.json
+	DEBUG=1 ${python} heliumos_website/manage.py dumpdata www.BlogPost > data/blog_post.json
+	DEBUG=1 ${python} -m json.tool data/blog_post.json data/blog_post.json
+	DEBUG=1 ${python} heliumos_website/manage.py dumpdata www.QuestionAnswer > data/question_answer.json
+	DEBUG=1 ${python} -m json.tool data/question_answer.json data/question_answer.json
+	DEBUG=1 ${python} heliumos_website/manage.py dumpdata www.Release > data/release.json
+	DEBUG=1 ${python} -m json.tool data/release.json data/release.json
+	DEBUG=1 ${python} heliumos_website/manage.py dumpdata sites.Site > data/sites.json
+	DEBUG=1 ${python} -m json.tool data/sites.json data/sites.json
 
 load:
-	${python} heliumos_website/manage.py loaddata data/blog_post.json
-	${python} heliumos_website/manage.py loaddata data/question_answer.json
-	${python} heliumos_website/manage.py loaddata data/release.json
-	${python} heliumos_website/manage.py loaddata data/sites.json
+	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/blog_post.json
+	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/question_answer.json
+	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/release.json
+	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/sites.json

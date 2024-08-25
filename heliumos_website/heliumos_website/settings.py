@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -18,13 +18,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-80#d^#a9nlqzp%r2%att^s-uv7=2!_7*aj%$(ex%4dnph8_l4p'
-
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(os.environ.get("DEBUG"))
 
-ALLOWED_HOSTS = []
+# SECURITY WARNING: keep the secret key used in production secret!
+if DEBUG:
+    SECRET_KEY = 'django-insecure-80#d^#a9nlqzp%r2%att^s-uv7=2!_7*aj%$(ex%4dnph8_l4p'
+else:
+    SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
+
+ALLOWED_HOSTS = ["localhost", "heliumos.org"]
 
 # Application definition
 
@@ -38,7 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.sitemaps',
     'django.contrib.staticfiles',
     'www',
-    'django_distill',
     'django_extensions'
 ]
 
@@ -121,6 +123,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_ROOT = "../static"
+STATIC_ROOT = "static"
 
 SITE_ID = 1

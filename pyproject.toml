@@ -2,11 +2,11 @@
 name = "heliumos-website"
 version = "0.1.0"
 dependencies = [
-    "django==5",
-    "django-distill==3",
-    "django-extensions==3",
-    "markdown==3.6"
+    "django>=5,<6",
+    "django-extensions>=3,<4",
+    "markdown>=3.6,<4"
 ]
+requires-python = ">= 3.12"
 
 [build-system]
 requires = ["setuptools >= 61.0"]

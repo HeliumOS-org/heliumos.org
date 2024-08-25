@@ -16,7 +16,7 @@
     </header>
     <section class="bg-base-100 flex justify-center p-14">
         <div class="flex-col content-center prose" itemscope itemtype="https://schema.org/BlogPosting">
-            <h2 class="text-center" itemprop="headline">{{ post.title }}</h2>
+            <h1 class="text-center" itemprop="headline">{{ post.title }}</h1>
             <p class="text-center" itemprop="datePublished" content="{{ create_data_iso8601 }}">{{ post.create_date }}</p>
             <p>{{ rendered_content | safe }}</p>
             <p class="text-center flex flex-col sm:flex-row justify-between">

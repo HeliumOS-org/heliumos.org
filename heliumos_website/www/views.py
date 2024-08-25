@@ -25,7 +25,7 @@ def download(request):
 
 
 def blog(request, page_number=1):
-    all_posts = BlogPost.objects.order_by("create_date")
+    all_posts = BlogPost.objects.all()
     paginator = Paginator(all_posts, 10)
     posts = paginator.get_page(page_number)
     context = {

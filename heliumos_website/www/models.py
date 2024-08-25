@@ -18,6 +18,9 @@ class BlogPost(models.Model):
     def get_absolute_url(self):
         return f"/blog/post/{self.slug}"
 
+    class Meta:
+        ordering = ["-create_date"]
+
 class Release(models.Model):
     version = models.CharField(max_length=200, help_text="e.g. 0.0.0")
     changelog = models.TextField(help_text="Markdown")

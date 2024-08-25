@@ -10,5 +10,17 @@
             "create_date": "2024-06-23",
             "is_published": true
         }
+    },
+    {
+        "model": "www.blogpost",
+        "pk": 2,
+        "fields": {
+            "title": "This Month in HeliumOS: August 2024",
+            "summary": "Welcome to the first installment of \"This Month in HeliumOS\", a monthly blog series where we'll be sharing updates and news around HeliumOS.",
+            "content": "Welcome to the first installment of \"This Month in HeliumOS\", a monthly blog series where we'll be sharing updates and news around HeliumOS! If you're interested in contributing or sharing your own HeliumOS-related news, please join us in our <a href=\"https://matrix.to/#/#heliumos:matrix.org\" class=\"link\">Matrix space</a>.\r\n\r\n## User Experience\r\n- **GNOME Software update**: GNOME Software has been bumped to the version typically distributed with GNOME 45. This resolves problems caused by using earlier versions of GNOME Software and Flatpak repositories together.\r\n- **GNOME Web replaces Chromium**: Chromium has been replaced by GNOME Web in the system image. This change was made because our users should have a web browser available out of the box and the liberty to use the web browser of their choice. GNOME Web requires less storage space and integrates better with the rest of the GNOME desktop on HeliumOS.\r\n- **Graphical booting with Plymouth**: HeliumOS now uses Plymouth for graphical booting, providing a visually appealing loading screen during boot. If you use disk encryption, you'll be able to type the decryption password into a graphical prompt instead of a text interface.\r\n- **System Images app**: A new System Images app has been added to HeliumOS, allowing you to easily check for updates, perform manual upgrades, and (soon) switch between different operating system variants. System Images is also known as <a href=\"https://codeberg.org/HeliumOS/bootc-gtk\" class=\"link\">bootc-gtk</a>.\r\n\r\n## Development\r\n- **Canary release**: HeliumOS now offers a canary release. This variant is suitable for users interested in access to HeliumOS updates sooner and willing to tolerate a slightly higher risk of instability.\r\n- **Official roadmap**: We're now publishing a roadmap on the HeliumOS website. Checkout our <a href=\"https://www.heliumos.org/roadmap/\" class=\"link\">roadmap</a> to learn more about our plans for the future. Currently, we're working on an \"Edge\" edition of HeliumOS. This edition will have better support for newer hardware by using a more recent version of the Linux kernel.\r\n\r\n## Fixes & Misc\r\n- **New wallpapers**: We've added new wallpapers to HeliumOS. If you like the GNOME 40 default backgrounds, enjoy!\r\n- **Session exit fix**: We fixed a bug that caused a 25-second delay when logging out or otherwise exiting your session. The confirmation prompt now appears immediately.\r\n- **Updated base images**: HeliumOS has been newly rebased on AlmaLinux 9.4's bootc images.\r\n\r\nThat's all for now, more updates next month!",
+            "slug": "this-month-in-heliumos-august-2024",
+            "create_date": "2024-08-25",
+            "is_published": true
+        }
     }
 ]

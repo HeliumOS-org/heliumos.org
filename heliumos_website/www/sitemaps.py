@@ -2,12 +2,12 @@ from django.contrib.sitemaps import Sitemap
 from django.urls.base import reverse
 
 from .models import BlogPost
-from .views import download, docs, index, roadmap
+from .views import download, docs, hardware, index, roadmap
 
 
 class MainSitemap(Sitemap):
     def items(self):
-        return [download, docs, index, roadmap]
+        return [download, docs, index, roadmap, hardware]
 
     def location(self, item):
         return reverse(item)

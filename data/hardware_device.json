@@ -1,0 +1,362 @@
+[
+    {
+        "model": "www.hardwaredevice",
+        "pk": 1,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P1 Gen 7",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500769"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 2,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 3680",
+            "form_factor": "Desktop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-3680-spec-sheet.pdf.external"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 3,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkCentre M90s Gen5",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500767"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 4,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkCentre M70s Gen5",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500764"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 5,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P16s Gen3",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500763"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 6,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad T16 Gen 3",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500754"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 7,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad T14 Gen 5",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500753"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 8,
+        "fields": {
+            "vendor": "HP",
+            "name": "ZBook Studio 16 G11",
+            "form_factor": "Laptop",
+            "link": "https://h20195.www2.hp.com/v2/GetPDF.aspx/c08990714"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 9,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 5680",
+            "form_factor": "Laptop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-5680-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 10,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P16v Gen 2",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500750"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 11,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad T14s Gen 5",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500751"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 12,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P16 Gen 2",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500749"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 13,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkCentre M90t Gen5",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500747"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 14,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 3280",
+            "form_factor": "Desktop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-3280-cff-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 15,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkStation P8",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500746"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 16,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkStation P2 Tower",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500745"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 17,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 5690",
+            "form_factor": "Laptop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-5690-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 18,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 3490",
+            "form_factor": "Laptop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-3490-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 19,
+        "fields": {
+            "vendor": "HP",
+            "name": "ZBook Firefly 14 G11",
+            "form_factor": "Laptop",
+            "link": "https://h20195.www2.hp.com/v2/GetPDF.aspx/c08521927"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 20,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 3590",
+            "form_factor": "Laptop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/pecision-3590-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 21,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 3591",
+            "form_factor": "Laptop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-3591-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 22,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad X1 Carbon Gen 12",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500742"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 23,
+        "fields": {
+            "vendor": "HP",
+            "name": "ZBook Firefly 16 G11",
+            "form_factor": "Laptop",
+            "link": "https://h20195.www2.hp.com/v2/GetPDF.aspx/c08925867"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 24,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 5490",
+            "form_factor": "Laptop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-5490-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 25,
+        "fields": {
+            "vendor": "HP",
+            "name": "ZBook Power 16 G11",
+            "form_factor": "Laptop",
+            "link": "https://h20195.www2.hp.com/v2/GetPDF.aspx/c08982653.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 26,
+        "fields": {
+            "vendor": "HP",
+            "name": "ZBook Fury 16 G11",
+            "form_factor": "Laptop",
+            "link": "https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c08937569"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 27,
+        "fields": {
+            "vendor": "HP",
+            "name": "ZBook Firefly 14 inch G11 A",
+            "form_factor": "Laptop",
+            "link": "https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c08924023"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 28,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precison 3460 SFF",
+            "form_factor": "Desktop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-3460-sff-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 29,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkEdge SE10",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500727"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 30,
+        "fields": {
+            "vendor": "HP",
+            "name": "ZBook Fury G10",
+            "form_factor": "Laptop",
+            "link": "https://h20195.www2.hp.com/v2/GetPDF.aspx/c08558392"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 31,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 3660",
+            "form_factor": "Desktop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-3660-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 32,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 5480",
+            "form_factor": "Laptop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-5480-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 33,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 7680",
+            "form_factor": "Laptop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-7680-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 34,
+        "fields": {
+            "vendor": "HP",
+            "name": "Z4 G4",
+            "form_factor": "Desktop",
+            "link": "http://www8.hp.com/h20195/v2/getpdf.aspx/c05527757.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 35,
+        "fields": {
+            "vendor": "HP",
+            "name": "Z6 G5 A",
+            "form_factor": "Desktop",
+            "link": "https://h20195.www2.hp.com/v2/GetPDF.aspx/c08740077"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 36,
+        "fields": {
+            "vendor": "HP",
+            "name": "Z6 G5",
+            "form_factor": "Desktop",
+            "link": "https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c08482167"
+        }
+    }
+]

@@ -50,3 +50,15 @@ class QuestionAnswer(models.Model):
 
     class Meta:
         ordering = ["order"]
+
+class HardwareDevice(models.Model):
+    vendor = models.CharField(max_length=200)
+    name = models.CharField(max_length=200)
+    form_factor = models.CharField(max_length=200)
+    link = models.URLField()
+
+    def __str__(self):
+        return f"{self.__class__.__name__}: {self.vendor} {self.name}"
+
+    class Meta:
+        ordering = ["vendor", "form_factor", "name"]

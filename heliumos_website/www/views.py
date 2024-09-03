@@ -7,7 +7,7 @@ from django.urls import reverse
 
 from markdown import markdown
 
-from .models import BlogPost, QuestionAnswer, Release
+from .models import BlogPost, HardwareDevice, QuestionAnswer, Release
 
 
 # Create your views here.
@@ -92,3 +92,10 @@ def docs(request):
 
 def roadmap(request):
     return render(request, "www/roadmap.html")
+
+def hardware(request):
+    devices = HardwareDevice.objects.all()
+    context = {
+        "devices": devices
+    }
+    return render(request, "www/hardware.html", context)

@@ -41,6 +41,8 @@ migrate:
 dump:
 	DEBUG=1 ${python} heliumos_website/manage.py dumpdata www.BlogPost > data/blog_post.json
 	DEBUG=1 ${python} -m json.tool data/blog_post.json data/blog_post.json
+	DEBUG=1 ${python} heliumos_website/manage.py dumpdata www.HardwareDevice > data/hardware_device.json
+	DEBUG=1 ${python} -m json.tool data/hardware_device.json data/hardware_device.json
 	DEBUG=1 ${python} heliumos_website/manage.py dumpdata www.QuestionAnswer > data/question_answer.json
 	DEBUG=1 ${python} -m json.tool data/question_answer.json data/question_answer.json
 	DEBUG=1 ${python} heliumos_website/manage.py dumpdata www.Release > data/release.json
@@ -50,6 +52,7 @@ dump:
 
 load:
 	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/blog_post.json
+	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/hardware_device.json
 	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/question_answer.json
 	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/release.json
 	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/sites.json

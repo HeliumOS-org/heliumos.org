@@ -17,5 +17,6 @@ urlpatterns = [
     path("feed.xml", views.BlogFeed(), name="feed"),
     path("releases/<str:type_>/", views.release_list, name="release_list"),
     path("docs/", views.docs, name="docs"),
-    path("roadmap/", views.roadmap, name="roadmap")
+    path("roadmap/", views.roadmap, name="roadmap"),
+    path("hardware/", views.hardware, name="hardware"),
 ]

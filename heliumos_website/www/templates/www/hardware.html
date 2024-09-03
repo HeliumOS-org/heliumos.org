@@ -1,0 +1,50 @@
+{% extends 'www/base.html' %}
+{% load static %}
+
+{% block title %}Hardware {{ block.super }}{% endblock %}
+
+{% block main %}
+    <header class="bg-base-200 w-full flex justify-center">
+        <div class="hero max-w-screen-xl">
+            <div class="hero-content flex flex-col sm:p-20">
+                <h1 class="text-5xl font-bold text-center">Hardware</h1>
+                <p class="gap-4 align-middle text-center">
+                    Physical devices and HeliumOS
+                </p>
+            </div>
+        </div>
+    </header>
+    <section class="bg-base-100 flex justify-center p-14">
+        <div class="flex-col content-center">
+            <p>
+                The following hardware is certified to work with the RHEL® operating system. As a modified RHEL derivative, HeliumOS is compatible with these devices:
+            </p>
+            <div class="max-h-[768px] overflow-y-auto">
+              <table class="table table-zebra table-pin-rows">
+                <thead>
+                  <tr>
+                    <th>Vendor</th>
+                    <th>Model</th>
+                    <th>Form Factor</th>
+                    <th>More info</th>
+                  </tr>
+                </thead>
+                <tbody>
+                {% for device in devices %}
+                    <tr class="hover">
+                        <td>{{ device.vendor }}</td>
+                        <td>{{ device.name }}</td>
+                        <td>{{ device.form_factor }}</td>
+                        <td><a class="link link-hover" href="{{ device.link }}">Link</a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+              </table>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block rights_attribution %}
+HeliumOS has no affiliation with Red Hat, Inc. The RHEL® trademarks are used to describe interoperability only and are not intended to indicate affiliation with or approval by Red Hat.
+{% endblock %}

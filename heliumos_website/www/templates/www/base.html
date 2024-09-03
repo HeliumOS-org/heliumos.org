@@ -32,6 +32,7 @@
                             <li><a href="{% url 'docs' %}#faq">FAQ</a></li>
                             <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
                             <li><a href="https://codeberg.org/HeliumOS">Source Code</a></li>
+                            <li><a href="{% url 'hardware' %}">Hardware</a></li>
                         </ul>
                     </li>
                     <li>
@@ -59,6 +60,7 @@
                             <li><a href="{% url 'docs' %}#faq">FAQ</a></li>
                             <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
                             <li><a href="https://codeberg.org/HeliumOS">Source Code</a></li>
+                            <li><a href="{% url 'hardware' %}">Hardware</a></li>
                         </ul>
                     </details>
                 </li>
@@ -82,7 +84,8 @@
 <main class="z-20 flex-grow">
     {% block main %}{% endblock %}
 </main>
-<footer class="footer p-10 bg-base-200 text-base-content z-20">
+<footer class="bg-base-200">
+    <div class="footer p-10 text-base-content z-20">
     <aside class="flex flex-col items-center">
         <img src="{% static 'www/images/logo-color.svg' %}" alt="HeliumOS Logo" class="w-12 h-12"/>
         <p>HeliumOS</p>
@@ -105,7 +108,8 @@
         <header class="footer-title">About</header>
         <a class="link link-hover" href="{% url 'docs' %}#faq">FAQ</a>
         <a class="link link-hover" href="{% url 'roadmap' %}">Roadmap</a>
-        <a href="https://codeberg.org/HeliumOS" class="link link-hover">Source Code</a>
+        <a class="link link-hover" href="https://codeberg.org/HeliumOS">Source Code</a>
+        <a class="link link-hover" href="{% url 'hardware' %}">Hardware</a>
     </nav>
     <nav>
         <header class="footer-title">Help</header>
@@ -113,6 +117,10 @@
         <a href="https://chat.heliumos.org" class="link link-hover">Chat Support</a>
         <a href="https://bugs.heliumos.org/" class="link link-hover">Bug Report</a>
     </nav>
+    </div>
+    <div class="flex justify-center">
+        <p class="text-center text-sm w-1/2">{% block rights_attribution %}{% endblock%}</p>
+    </div>
 </footer>
 </body>
 </html>

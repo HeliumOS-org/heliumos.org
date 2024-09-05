@@ -358,5 +358,365 @@
             "form_factor": "Desktop",
             "link": "https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c08482167"
         }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 37,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad X13 4th Gen AMD",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500729"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 38,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P16s 2nd Gen AMD",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500730"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 39,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkCentre M90s 4th Gen",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500717"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 40,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkCentre M70s 4th Gen",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500714"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 41,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad T14 4th Gen",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500715"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 42,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P16v",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500707"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 43,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad T14s 4th Gen",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500695"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 44,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkCentre M70t 4th Gen",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500703"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 45,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkCentre M70q 4th Gen",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500694"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 46,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P15v 3rd Gen",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500675"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 47,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P16s",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500667"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 48,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkStation P7",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500686"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 49,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkStation P620",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500504"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 50,
+        "fields": {
+            "vendor": "HP",
+            "name": "ZBook Fury G10",
+            "form_factor": "Laptop",
+            "link": "https://h20195.www2.hp.com/v2/GetPDF.aspx/c08558392"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 51,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 3660",
+            "form_factor": "Desktop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-3660-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 52,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 5480",
+            "form_factor": "Laptop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-5480-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 53,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 7680",
+            "form_factor": "Laptop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-7680-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 54,
+        "fields": {
+            "vendor": "HP",
+            "name": "Z4 G4",
+            "form_factor": "Desktop",
+            "link": "http://www8.hp.com/h20195/v2/getpdf.aspx/c05527757.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 55,
+        "fields": {
+            "vendor": "HP",
+            "name": "Z4 G5",
+            "form_factor": "Desktop",
+            "link": "https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c08482306"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 56,
+        "fields": {
+            "vendor": "HP",
+            "name": "Z2 Tower G9",
+            "form_factor": "Desktop",
+            "link": "https://h20195.www2.hp.com/v2/getpdf.aspx/c08109687.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 57,
+        "fields": {
+            "vendor": "HP",
+            "name": "Z6 G5 A",
+            "form_factor": "Desktop",
+            "link": "https://h20195.www2.hp.com/v2/GetPDF.aspx/c08740077"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 58,
+        "fields": {
+            "vendor": "HP",
+            "name": "Z6 G5",
+            "form_factor": "Desktop",
+            "link": "https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c08482167"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 59,
+        "fields": {
+            "vendor": "HP",
+            "name": "Z8 Gury G5",
+            "form_factor": "Desktop",
+            "link": "https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c08481500"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 60,
+        "fields": {
+            "vendor": "HP",
+            "name": "Z4 Rack G5",
+            "form_factor": "Desktop",
+            "link": "https://h20195.www2.hp.com/v2/GetPDF.aspx/c08696740"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 61,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 3581",
+            "form_factor": "Laptop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-3581-spec-sheet.pdf.external"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 62,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 3580",
+            "form_factor": "Laptop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-3580-spec-sheet.pdf.external"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 63,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 7875",
+            "form_factor": "Desktop",
+            "link": "https://dl.dell.com/content/manual29663795-precision-7875-tower-owner-s-manual.pdf?language=en-us"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 64,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 3260 Compact",
+            "form_factor": "Desktop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-3260-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 65,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 7780",
+            "form_factor": "Laptop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-7780-spec-sheet.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 66,
+        "fields": {
+            "vendor": "Dell",
+            "name": "Precision 3480",
+            "form_factor": "Laptop",
+            "link": "https://www.delltechnologies.com/asset/en-us/products/workstations/technical-support/precision-3480-spec-sheet.pdf.external"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 67,
+        "fields": {
+            "vendor": "HP",
+            "name": "ZCentral 4R",
+            "form_factor": "Desktop",
+            "link": "http://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c06939061"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 68,
+        "fields": {
+            "vendor": "HP",
+            "name": "Z6 G4",
+            "form_factor": "Desktop",
+            "link": "http://www8.hp.com/h20195/v2/getpdf.aspx/c05527761.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 69,
+        "fields": {
+            "vendor": "HP",
+            "name": "Z8 G4",
+            "form_factor": "Desktop",
+            "link": "http://www8.hp.com/h20195/v2/GetPDF.aspx/c05527763.pdf"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 70,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkStation PX",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500708"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 71,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkStation P3 Tower",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500701"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 72,
+        "fields": {
+            "vendor": "HP",
+            "name": "Z2 Small Form Factor G9",
+            "form_factor": "Desktop",
+            "link": "https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c08111505"
+        }
     }
 ]

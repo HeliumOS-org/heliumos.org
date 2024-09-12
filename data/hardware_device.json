@@ -4,7 +4,7 @@
         "pk": 1,
         "fields": {
             "vendor": "Lenovo",
-            "name": "ThinkPad P1 Gen 7",
+            "name": "ThinkPad P1 7th Gen",
             "form_factor": "Laptop",
             "link": "https://support.lenovo.com/us/en/solutions/PD500769"
         }
@@ -24,7 +24,7 @@
         "pk": 3,
         "fields": {
             "vendor": "Lenovo",
-            "name": "ThinkCentre M90s Gen5",
+            "name": "ThinkCentre M90s 5th Gen",
             "form_factor": "Desktop",
             "link": "https://support.lenovo.com/us/en/solutions/PD500767"
         }
@@ -34,7 +34,7 @@
         "pk": 4,
         "fields": {
             "vendor": "Lenovo",
-            "name": "ThinkCentre M70s Gen5",
+            "name": "ThinkCentre M70s 5th Gen",
             "form_factor": "Desktop",
             "link": "https://support.lenovo.com/us/en/solutions/PD500764"
         }
@@ -44,7 +44,7 @@
         "pk": 5,
         "fields": {
             "vendor": "Lenovo",
-            "name": "ThinkPad P16s Gen3",
+            "name": "ThinkPad P16s 3rd Gen",
             "form_factor": "Laptop",
             "link": "https://support.lenovo.com/us/en/solutions/PD500763"
         }
@@ -54,7 +54,7 @@
         "pk": 6,
         "fields": {
             "vendor": "Lenovo",
-            "name": "ThinkPad T16 Gen 3",
+            "name": "ThinkPad T16 3rd Gen",
             "form_factor": "Laptop",
             "link": "https://support.lenovo.com/us/en/solutions/PD500754"
         }
@@ -64,7 +64,7 @@
         "pk": 7,
         "fields": {
             "vendor": "Lenovo",
-            "name": "ThinkPad T14 Gen 5",
+            "name": "ThinkPad T14 5th Gen",
             "form_factor": "Laptop",
             "link": "https://support.lenovo.com/us/en/solutions/PD500753"
         }
@@ -94,7 +94,7 @@
         "pk": 10,
         "fields": {
             "vendor": "Lenovo",
-            "name": "ThinkPad P16v Gen 2",
+            "name": "ThinkPad P16v 2nd Gen",
             "form_factor": "Laptop",
             "link": "https://support.lenovo.com/us/en/solutions/PD500750"
         }
@@ -104,7 +104,7 @@
         "pk": 11,
         "fields": {
             "vendor": "Lenovo",
-            "name": "ThinkPad T14s Gen 5",
+            "name": "ThinkPad T14s 5th Gen",
             "form_factor": "Laptop",
             "link": "https://support.lenovo.com/us/en/solutions/PD500751"
         }
@@ -114,7 +114,7 @@
         "pk": 12,
         "fields": {
             "vendor": "Lenovo",
-            "name": "ThinkPad P16 Gen 2",
+            "name": "ThinkPad P16 2nd Gen",
             "form_factor": "Laptop",
             "link": "https://support.lenovo.com/us/en/solutions/PD500749"
         }
@@ -124,7 +124,7 @@
         "pk": 13,
         "fields": {
             "vendor": "Lenovo",
-            "name": "ThinkCentre M90t Gen5",
+            "name": "ThinkCentre M90t 5th Gen",
             "form_factor": "Desktop",
             "link": "https://support.lenovo.com/us/en/solutions/PD500747"
         }
@@ -214,7 +214,7 @@
         "pk": 22,
         "fields": {
             "vendor": "Lenovo",
-            "name": "ThinkPad X1 Carbon Gen 12",
+            "name": "ThinkPad X1 Carbon 12th Gen",
             "form_factor": "Laptop",
             "link": "https://support.lenovo.com/us/en/solutions/PD500742"
         }
@@ -717,6 +717,186 @@
             "name": "Z2 Small Form Factor G9",
             "form_factor": "Desktop",
             "link": "https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c08111505"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 73,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad T14 4th Gen AMD",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500731"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 74,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P16s 2nd Gen",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500719"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 75,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad T16 2nd Gen",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500720"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 76,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P1 6th Gen",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500721"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 77,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P14s 4th Gen",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500718"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 78,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkCentre M90T 4th Gen",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500713"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 79,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P16 2nd Gen",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500710"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 80,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkCentre M90q 4th Gen",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500709"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 81,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad X1 Carbon 11th Gen",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500688"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 82,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkCentre M80q 4th Gen",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500704"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 83,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad T16",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500668"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 84,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad T14 3rd Gen",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500671"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 85,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad T15p 3rd Gen",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500676"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 86,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P16s AMD",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500665"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 87,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P15v 3rd Gen AMD",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500660"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 88,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkPad P1 5th Gen",
+            "form_factor": "Laptop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500659"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 89,
+        "fields": {
+            "vendor": "Lenovo",
+            "name": "ThinkStation P5",
+            "form_factor": "Desktop",
+            "link": "https://support.lenovo.com/us/en/solutions/PD500685"
+        }
+    },
+    {
+        "model": "www.hardwaredevice",
+        "pk": 90,
+        "fields": {
+            "vendor": "HP",
+            "name": "Z8 Fury G5",
+            "form_factor": "Desktop",
+            "link": "https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c08481500"
         }
     }
 ]

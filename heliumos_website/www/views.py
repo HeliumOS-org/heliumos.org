@@ -1,4 +1,5 @@
 from datetime import datetime
+from functools import cache
 
 from django.core.paginator import Paginator
 from django.contrib.syndication.views import Feed
@@ -11,11 +12,12 @@ from .models import BlogPost, HardwareDevice, QuestionAnswer, Release
 
 
 # Create your views here.
-
+@cache
 def index(request):
     return render(request, 'www/index.html')
 
 
+@cache
 def download(request):
     stable_releases = Release.objects.filter(is_alpha=False, is_beta=False, is_featured=True)
     context = {
@@ -24,6 +26,7 @@ def download(request):
     return render(request, 'www/download.html', context)
 
 
+@cache
 def blog(request, page_number=1):
     all_posts = BlogPost.objects.all()
     paginator = Paginator(all_posts, 10)
@@ -34,6 +37,7 @@ def blog(request, page_number=1):
     return render(request, 'www/blog.html', context)
 
 
+@cache
 def blog_post(request, slug):
     post = get_object_or_404(BlogPost, slug=slug)
     rendered_content = markdown(post.content)
@@ -63,6 +67,8 @@ class BlogFeed(Feed):
     def item_link(self, item):
         return reverse('blog_post', args=[item.slug])
 
+
+@cache
 def release_list(request, type_):
     alpha_releases = Release.objects.filter(is_alpha=True, is_featured=True)
     beta_releases = Release.objects.filter(is_beta=True, is_featured=True)
@@ -77,6 +83,8 @@ def release_list(request, type_):
     }
     return render(request, "www/release_list.html", context)
 
+
+@cache
 def docs(request):
     qas = []
     for qa in QuestionAnswer.objects.all():
@@ -90,9 +98,13 @@ def docs(request):
     }
     return render(request, 'www/docs.html', context)
 
+
+@cache
 def roadmap(request):
     return render(request, "www/roadmap.html")
 
+
+@cache
 def hardware(request):
     devices = HardwareDevice.objects.all()
     context = {

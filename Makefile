@@ -15,7 +15,7 @@ help:
 	@echo make load - load data to db from json files
 
 devpy:
-	DEBUG=1 ${python} heliumos_website/manage.py runserver
+	${python} heliumos_website/manage.py runserver
 
 devcss:
 	${npm} run tw-watch
@@ -23,20 +23,21 @@ devcss:
 build:
 	rm -rdf dist static
 	${npm} run tw-build
-	DEBUG=1 ${python} heliumos_website/manage.py collectstatic --no-input
+	${python} heliumos_website/manage.py distill-local --force --collectstatic dist
 
 deps:
 	${uv} pip compile pyproject.toml -o requirements.txt --generate-hashes
+
 
 sync:
 	${uv} pip sync requirements.txt
 	${npm} install
 
 makemigrations:
-	DEBUG=1 ${python} heliumos_website/manage.py makemigrations
+	${python} heliumos_website/manage.py makemigrations
 
 migrate:
-	DEBUG=1 ${python} heliumos_website/manage.py migrate
+	${python} heliumos_website/manage.py migrate
 
 dump:
 	DEBUG=1 ${python} heliumos_website/manage.py dumpdata www.BlogPost > data/blog_post.json

@@ -106,8 +106,8 @@ django==5.0 \
     # via
     #   heliumos-website (pyproject.toml)
     #   django-distill
-django-distill==2.10.2 \
-    --hash=sha256:e14e138db240c21673dcc417272cd7af0a11396d7b083beeee1a813831830347
+django-distill==3.2.7 \
+    --hash=sha256:b0aaf6f9bb7a36cda5ce169fd51e862718a924c5a85e382a7c208c12ff8e3ee2
     # via heliumos-website (pyproject.toml)
 django-extensions==3.0.0 \
     --hash=sha256:10094eca549c004bd4f6512dfe418ae88cc52cbbb40c4b71b5de3bca3ace902d \

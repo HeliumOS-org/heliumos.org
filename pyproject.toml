@@ -3,7 +3,7 @@ name = "heliumos-website"
 version = "0.1.0"
 dependencies = [
     "django==5",
-    "django-distill==2.10.2",
+    "django-distill>=3.2",
     "django-extensions==3",
     "markdown==3.6",
     "whitenoise"

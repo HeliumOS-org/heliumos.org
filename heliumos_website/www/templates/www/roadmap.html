@@ -50,19 +50,18 @@
                 Many bugs such as the slow session exit bug are patched.
             </p>
           </div>
-          <hr />
+          <hr class="bg-primary"/>
         </li>
         <li>
-          <hr />
-          {% include "www/snippets/timeline_point.html" %}
+          <hr class="bg-primary" />
+          {% include "www/snippets/timeline_point.html" with done=1 %}
           <div class="timeline-end timeline-box">
-            <time class="font-mono italic">Q3 2024</time>
-            <p class="font-bold">Future plans</p>
+            <time class="font-mono italic">September 2024</time>
+            <p class="font-bold">Hardware and Infrastructure</p>
             <p>
-                <ul>
-                    <li>Change image using "System Images" app</li>
-                    <li>Publication of hardware compatibility information</li>
-                </ul>
+                HeliumOS Edge Edition releases, improving the experience for newer devices.
+                The build infrastrcuture migrates from Quay.io to GitHub Actions.
+                A list of compatible hardware is published to heliumos.org
             </p>
           </div>
           <hr />
@@ -75,8 +74,9 @@
             <p class="font-bold">Future plans</p>
             <p>
                 <ul>
-                    <li>Support for Nvidia GPUs</li>
-                    <li>HeliumOS 9 Beta Release</li>
+                    <li>Change image using "System Images" app</li>
+                    <li>HeliumOS 9 rebase on AlmaLinux 9.5</li>
+                    <li>Release HeliumOS 10 Alpha based on CentOS Stream 10</li>
                 </ul>
             </p>
           </div>
@@ -90,9 +90,8 @@
             <p class="font-bold">Future plans</p>
             <p>
                 <ul>
-                    <li>HeliumOS 9 rebase on AlmaLinux 9.5</li>
-                    <li>Release HeliumOS 10 based on AlmaLinux 10</li>
-                    <li>ARM64/Aarch64 support</li>
+                    <li>Support Nvidia GPUs</li>
+                    <li>Support ARM64/Aarch64 CPUs</li>
                 </ul>
             </p>
           </div>

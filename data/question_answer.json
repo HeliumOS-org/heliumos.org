@@ -4,7 +4,7 @@
         "pk": 1,
         "fields": {
             "question": "Why is HeliumOS \"Atomic\"?",
-            "answer": "The most reliable operating systems use an atomic system for core software distribution. In the case of HeliumOS, new updates are distributed via OCI-Compatible <a href=\"https://containers.github.io/bootc/\" class=\"link\">BootC</a> images. Regardless of power failures or similar interruptions, your system will never be in a broken partially-updated state.",
+            "answer": "The most reliable operating systems use an atomic system for core software distribution. In the case of HeliumOS, new updates are distributed via OCI-Compatible <a href=\"https://containers.github.io/bootc/\" class=\"link\">Bootable Container</a> images. Regardless of power failures or similar interruptions, your system will never be in a broken partially-updated state.",
             "order": 20
         }
     },
@@ -31,7 +31,7 @@
         "pk": 5,
         "fields": {
             "question": "What is HeliumOS?",
-            "answer": "### HeliumOS is...\r\n\r\n* An atomic desktop operating system for your devices, designed to empower users without getting in the way.\r\n* Built on top of AlmaLinux, the forever-free enterprise Linux distribution, inheriting its stability, security, and compatibility.\r\n\r\n### HeliumOS offers...\r\n\r\n* A simple and intuitive Linux desktop using GNOME, featuring an easy-to-use interface and seamless user experience.\r\n* An app store with a wide selection of Flatpak packages, providing up-to-date and sandboxed applications that are easy to install and manage.\r\n* A commitment to 10 years of support, improving your system with new features, bugfixes, and security updates throughout the life of your device",
+            "answer": "### HeliumOS is...\r\n\r\n* An atomic desktop operating system for your devices, designed to empower users without getting in the way.\r\n* Built on top of CentOS Stream and AlmaLinux, the forever-free enterprise Linux distribution, inheriting stability, security, and compatibility.\r\n\r\n### HeliumOS offers...\r\n\r\n* A simple and intuitive Linux desktop using GNOME, featuring an easy-to-use interface and seamless user experience.\r\n* An app store with a wide selection of Flatpak packages, providing up-to-date and sandboxed applications that are easy to install and manage.\r\n* A commitment to 10 years of support, improving your system with new features, bugfixes, and security updates throughout the life of your device.",
             "order": 10
         }
     }

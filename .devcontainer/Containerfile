@@ -1,0 +1,3 @@
+FROM quay.io/fedora/fedora:41
+
+RUN dnf install -y git make python3 uv npm

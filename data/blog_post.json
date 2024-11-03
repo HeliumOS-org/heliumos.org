@@ -34,5 +34,17 @@
             "create_date": "2024-09-28",
             "is_published": true
         }
+    },
+    {
+        "model": "www.blogpost",
+        "pk": 4,
+        "fields": {
+            "title": "This Month in HeliumOS: October 2024",
+            "summary": "Welcome to October 2024's installment of  This Month in HeliumOS! The changes this month were few and may have gone unnoticed.",
+            "content": "Welcome to October 2024's installment of  This Month in HeliumOS! The changes this month were few and may have gone unnoticed.\r\n\r\n## User Experience\r\n\r\n- **Mutable Exceptions**: This change may not affect ordinary users, however it should delight developers and power users. The */opt* and */usr/local* directories are now mutable, allowing system administrators to install software to those locations.\r\n\r\n- **Docker**: Docker Engine, Docker Compose, and the Docker CLI are tools used by many developers for the containerization of software. Although Podman is also installed, the addition of Docker to HeliumOS installations makes some Podman-incompatible use-cases possible. You may wish to follow the Docker <a href=\"https://docs.docker.com/engine/install/linux-postinstall/\" class=\"link\">post-installation steps</a>.\r\n\r\n## Development\r\n\r\n- **Edge Edition**: HeliumOS Edge Edition brings HeliumOS to newer hardware. Previously, the Linux kernel distributed with HeliumOS Edge was repurposed from a Fedora package. Due to various concerns, this has been replaced by the mainline kernel provided by the ELRepo Project. As of this month, HeliumOS Edge Edition is now running Linux 6.11 instead of 6.8. Thank you to boredsquirrel for his feedback!",
+            "slug": "this-month-in-heliumos-october-2024",
+            "create_date": "2024-11-03",
+            "is_published": true
+        }
     }
 ]

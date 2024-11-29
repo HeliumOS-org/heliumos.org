@@ -46,5 +46,17 @@
             "create_date": "2024-11-03",
             "is_published": true
         }
+    },
+    {
+        "model": "www.blogpost",
+        "pk": 5,
+        "fields": {
+            "title": "This Month in HeliumOS: November 2024",
+            "summary": "Welcome to This Month in HeliumOS! We have exciting news this month concerning HeliumOS, EL10, and KDE.",
+            "content": "Welcome to This Month in HeliumOS! We have exciting news this month concerning HeliumOS, EL10, and KDE. If you're interested in contributing or sharing your own HeliumOS-related news, please join us in our <a href=\"https://matrix.to/#/#heliumos:matrix.org\" class=\"link\">Matrix space</a>.\r\n\r\n## Development\r\n\r\n- **Enterprise Linux 10**:  HeliumOS has begun experimental builds based on Enterprise Linux 10. Our current plans are to use CentOS Stream as a base until EOL, followed by a transition to an AlmaLinux base. As bootc images for CentOS Stream 10 are now available, current HeliumOS 10 builds are based on CentOS Stream 10. Although published to our OCI registry as `oci.heliumos.org/heliumos/bootc:10-canary-edge`, these images should be considered pre-alpha.\r\n\r\n- **KDE Plasma**: As part of the upgrade to Enterprise Linux 10, HeliumOS is migrating from GNOME to KDE Plasma. This decision has been made for multiple reasons:\r\n    - Stability: By default, GNOME is missing basic desktop features such as system tray icons. The third-party extensions that provide this functionality are prone to crashes and inconsistency with the rest of the system. KDE Plasma has first-party support for these features and is more reliable as of KDE Plasma 6.\r\n    - Support: GNOME in HeliumOS depends on upstream support. With Enterprise Linux 10, GNOME is still available, but with reduced support. Migration to KDE Plasma will depend on EPEL's packages, which continue to support KDE Plasma.\r\n\r\n    Packaging of KDE Plasma 6 for EPEL is ongoing, so some important applications such as the Discover store and the Spectacle screenshot tool are currently missing. We plan to release a public alpha of HeliumOS 10 once these issues are resolved soon.\r\n\r\n## Misc\r\n\r\n- **Oci Registry Router**: Oci Registry Router is a project that we previously announced with a goal of creating a \"mirrorlist\" for OCI  image registries. Unfortunately, this is made impossible because of limitations of OCI tooling such as Docker and Podman. Because of this, the repository has been archived and development on Oci Registry Router has ceased.\r\n\r\nThat's all for now, more updates next month!",
+            "slug": "this-month-in-heliumos-november-2024",
+            "create_date": "2024-11-29",
+            "is_published": true
+        }
     }
 ]

@@ -5,7 +5,7 @@
         "fields": {
             "version": "9-Alpha",
             "changelog": "N/A",
-            "download_url": "https://dl.heliumos.org/heliumos/releases/test/9_Alpha/HeliumOS-9-latest-x86_64-boot.iso",
+            "download_url": "https://dl-heliumos.b-cdn.net/heliumos/releases/test/9_Alpha/HeliumOS-9-latest-x86_64-boot.iso",
             "sha256": "b9b608d5cb1a1a838258446160669014f5872ab256f5733088acaf32760b2722",
             "torrent_url": "about:blank",
             "is_alpha": true,

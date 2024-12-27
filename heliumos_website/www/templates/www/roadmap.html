@@ -64,19 +64,19 @@
                 A list of compatible hardware is published to heliumos.org
             </p>
           </div>
-          <hr />
+          <hr class="bg-primary" />
         </li>
         <li>
-          <hr />
-          {% include "www/snippets/timeline_point.html" %}
+          <hr class="bg-primary" />
+          {% include "www/snippets/timeline_point.html" with done=1 %}
           <div class="timeline-start timeline-box">
             <time class="font-mono italic">Q4 2024</time>
-            <p class="font-bold">Future plans</p>
+            <p class="font-bold">EL10 and KDE Plasma</p>
             <p>
                 <ul>
-                    <li>Change image using "System Images" app</li>
-                    <li>HeliumOS 9 rebase on AlmaLinux 9.5</li>
-                    <li>Release HeliumOS 10 Alpha based on CentOS Stream 10</li>
+                    The long-awaited HeliumOS 10 Alpha publicly releases.
+                    HeliumOS 10 accompanies a migration from GNOME to KDE Plasma.
+                    Installation media are now produced using bootc-image-builder.
                 </ul>
             </p>
           </div>
@@ -90,8 +90,10 @@
             <p class="font-bold">Future plans</p>
             <p>
                 <ul>
+                    <li>System Images app with Qt</li>
                     <li>Support Nvidia GPUs</li>
                     <li>Support ARM64/Aarch64 CPUs</li>
+                    <li>HeliumOS 10 Beta</li>
                 </ul>
             </p>
           </div>

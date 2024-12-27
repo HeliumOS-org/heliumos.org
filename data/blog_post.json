@@ -58,5 +58,17 @@
             "create_date": "2024-11-29",
             "is_published": true
         }
+    },
+    {
+        "model": "www.blogpost",
+        "pk": 6,
+        "fields": {
+            "title": "This Month in HeliumOS: December 2024",
+            "summary": "Releasing HeliumOS 10 Alpha with KDE Plasma!",
+            "content": "Welcome to this year's final post of This Month in HeliumOS, a monthly blog series where we share updates and news around HeliumOS! . If you're interested in contributing or sharing your own HeliumOS-related news, please join us in our <a href=\"https://matrix.to/#/#heliumos:matrix.org\" class=\"link\">Matrix space</a>.\r\n\r\n## HeliumOS 10\r\n\r\n- **Alpha Release**: We are proud to announce an alpha release of HeliumOS 10! The new version brings major changes, most notably the KDE Plasma desktop and a new base on Enterprise Linux 10.\r\n\r\n- **Future of HeliumOS**: The HeliumOS 10 Alpha is a pre-release, not yet suitable for production use. Going forward we will address user feedback, add more features, and eventually freeze for a beta followed by a stable release.\r\n\r\n\r\n## User Experience\r\n\r\n- **Work in Progress**: The KDE Plasma 6 desktop environment is still in the process of of being packaged for HeliumOS and similar systems.  As such, some components of the desktop environment may be missing. Kudos to the Fedora KDE & EPEL package maintainers for their hard work!\r\n\r\n- **System Images**: During the HeliumOS 9 Alpha, the System Images application (bootc-gtk) was included and receiving updates. The System Images application is being rewritten using the Qt library as bootc-qt, and will be included in a later update of the HeliumOS 10 Alpha.\r\n\r\n## Development\r\n\r\n- **Installation Media**: HeliumOS' installation media is now built using [bootc-image-builder](https://github.com/osbuild/bootc-image-builder). Although the iso file is larger, the initial installation should be quicker and function offline.\r\n\r\n\r\nThank you for reading, and see [Pre-Releases](/releases/pre-release/) to download HeliumOS v10-Alpha!",
+            "slug": "this-month-in-heliumos-december-2024",
+            "create_date": "2024-12-27",
+            "is_published": true
+        }
     }
 ]

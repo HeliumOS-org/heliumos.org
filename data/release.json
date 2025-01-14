@@ -22,15 +22,15 @@
         "fields": {
             "version": "10-Alpha",
             "changelog": "N/A",
-            "download_url": "https://dl-heliumos.b-cdn.net/heliumos/releases/test/10_Alpha/HeliumOS-10-latest-x86_64-boot.iso",
-            "sha256": "8f8421c2201fbaa2b912ae6a036d0a3f9f27c21466ea91543aa1e99288e6f17b",
+            "download_url": "https://dl-heliumos.b-cdn.net/heliumos/releases/test/10_Alpha/HeliumOS-10-alpha_rev2-x86_64-boot.iso",
+            "sha256": "4ba5a77ee811c02fdeb76aa8468e9ef17e01e3939a6d79eaee138a4244060c5b",
             "torrent_url": "about:blank",
             "is_alpha": true,
             "is_beta": false,
             "is_featured": true,
             "image_path": "/www/images/logo-color.svg",
-            "file_size": 4.33,
-            "release_date": "2024-12-28"
+            "file_size": 4.36,
+            "release_date": "2025-01-14"
         }
     }
 ]

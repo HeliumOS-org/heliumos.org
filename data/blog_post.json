@@ -70,5 +70,17 @@
             "create_date": "2024-12-27",
             "is_published": true
         }
+    },
+    {
+        "model": "www.blogpost",
+        "pk": 7,
+        "fields": {
+            "title": "This Month in HeliumOS: January 2025",
+            "summary": "Kicking off 2024 with UX Refinements in HeliumOS 10 Alpha!",
+            "content": "Welcome to this year\u2019s first edition of *This Month in HeliumOS*! In this series, we share updates and news about HeliumOS. Join our <a href=\"https://matrix.to/#/#heliumos:matrix.org\" class=\"link\">Matrix space</a> to contribute or discuss these updates.  \r\n\r\n---\r\n\r\n## User Experience  \r\n\r\n- **Distrobox Shortcut in App Launcher**: Users reported difficulty starting Distrobox, a command-line tool for container management. To improve accessibility, we\u2019ve added a desktop shortcut that opens a terminal with `distrobox --help` for guidance.  \r\n\r\n- **HeliumOS 9 Alpha Retirement**: Due to the availability of Enterprise Linux 10 and therefore HeliumOS 10 Alpha, we\u2019ve discontinued builds for HeliumOS 9 Alpha. Users testing alpha releases should migrate to **[HeliumOS 10 Alpha](/releases/pre-release/)**.  \r\n\r\n- **Expanded KDE Applications**: HeliumOS 10 Alpha launched with a small selection of applications from the KDE suite. We\u2019ve since added basic utilities such as [KolourPaint](https://apps.kde.org/kolourpaint/) (Paint Program), [Okular](https://apps.kde.org/okular/) (Document Viewer), and [KCalc](https://apps.kde.org/kcalc/) (Scientific Calculator).\r\n\r\n- **Install Scripts for Developer Tools**: To simplify setup, several scripts now enable one-command installation or removal of a few popular tools. As an example, users wanting Docker and/or a local Kubernetes cluster can install Rancher Desktop with a single command by running` heliumos-rancher_desktop-enable` . This can be just as easily removed by running `heliumos-rancher_desktop-disable`.\r\n\r\n---\r\n\r\n## Fixes  \r\n\r\n- **Boot Screen Update**: The Breeze-style boot screen present in earlier revisions of HeliumOS 10 Alpha lacked a graphical password prompt for disk encryption. Switching to the BGRT boot screen resolved this issue.  \r\n\r\n- **Homebrew Compatibility Fix**: When installed via `heliumos-homebrew-enable`, Homebrew now configures system paths automatically, fixing linker errors when compiling with Homebrew libraries.  \r\n\r\n- **Hibernation/Sleep Fix**: Some devices running HeliumOS were unable to wake from Hibernation. We\u2019ve disabled hibernation in favor of sleep as a possible fix, ensuring reliable sleep/wake functionality. A permanent solution is under investigation.\r\n\r\n---\r\n\r\nThank you for reading! See [Pre-Releases](/releases/pre-release/) to download HeliumOS v10-Alpha. More updates next month!",
+            "slug": "this-month-in-heliumos-january-2025",
+            "create_date": "2025-02-02",
+            "is_published": false
+        }
     }
 ]

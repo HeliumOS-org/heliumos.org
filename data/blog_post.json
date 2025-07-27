@@ -82,5 +82,17 @@
             "create_date": "2025-02-02",
             "is_published": false
         }
+    },
+    {
+        "model": "www.blogpost",
+        "pk": 8,
+        "fields": {
+            "title": "Announcing the release of HeliumOS 10",
+            "summary": "HeliumOS 10 has been released as stable! Learn what's new and how HeliumOS 10 may improve in the future!",
+            "content": "HeliumOS 10  has released with some notable changes from earlier Alpha releases:\r\n\r\n- Version 6.12 of the Linux kernel from AlmaLinux, signed for secure boot\r\n- Zsh as default shell, with a polished and minimal configuration\r\n- BTRFS as default filesystem, with an option for LUKS full-disk encryption in the installer\r\n- Docker is installed by default, see our [documentation](/docs/#how-to) for more details.\r\n- HeliumOS build sources were migrated from a collection of Bash scripts to Ansible yaml. These are built using Podman into [Bootable Container](https://containers.github.io/bootable/) images.\r\n\r\n## Experimental\r\n\r\nHeliumOS 10 Edge Edition is available on an experimental basis:\r\n\r\n- The more recent 6.14 kernel from the CentOS Hyperscale SIG provides compatibility with hardware that may be too new to properly function with the stock 6.12 kernel.\r\n- Similar to the standard edition of HeliumOS, NVIDIA GPUs are supported. However, HeliumOS Edge uses the NVIDIA dkms packages to work with the newer kernel, thus preventing the use of secure boot.\r\n- Users who encounter hardware-related issues with HeliumOS may switch to HeliumOS Edge Edition by running <br/>`sudo bootc switch quay.io/heliumos/bootc:10-edge`\r\n\r\nHeliumOS Addons is an experimental project that allows installation from a selection of non-containerized software. It is inspired by FreeBSD Ports, powered by OverlayFS, and includes editors such as VSCode and Neovim alongside language tooling such as uv (Python), rustup, and NodeJS/NPM.\r\n\r\n## Fixes\r\n\r\nTwo critical bugs were found and fixed during the HeliumOS 10 Alpha+Beta:\r\n\r\n- Fixed a [bug](https://forums.developer.nvidia.com/t/frequent-lags-and-loss-of-smoothness-in-kde-plasma-with-dual-monitors-on-nvidia-3070-ti-wayland-x11/311888/8) through the use of HeliumOS Edge Edition. Some devices using NVIDIA GPUs previously experienced stuttering.\r\n- Automatically recovers from kernel panics resulting from a [bug](https://github.com/bootc-dev/bootc/issues/971) where systemd-remount-fs.service does not function properly on bootc systems\r\n\r\n\r\n## What's next?\r\n\r\n- Stabilization and development of experimental projects (Edge Edition, Addons)\r\n- Development of the System Images app for graphical management of system updates\r\n- Improving documentation and seeking contributors",
+            "slug": "heliumos-10-released",
+            "create_date": "2025-07-28",
+            "is_published": true
+        }
     }
 ]

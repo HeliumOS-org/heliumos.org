@@ -56,6 +56,7 @@ dump:
 load:
 	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/blog_post.json
 	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/hardware_device.json
+	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/how_to.json
 	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/question_answer.json
 	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/release.json
 	DEBUG=1 ${python} heliumos_website/manage.py loaddata data/sites.json

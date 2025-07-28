@@ -7,7 +7,7 @@ from django.urls import reverse
 
 from markdown import markdown
 
-from .models import BlogPost, HardwareDevice, QuestionAnswer, Release
+from .models import BlogPost, HardwareDevice, QuestionAnswer, Release, HowTo
 
 
 # Create your views here.
@@ -85,8 +85,16 @@ def docs(request):
             answer = markdown(qa.answer)
         )
         qas.append(obj)
+    howtos = []
+    for howto in HowTo.objects.all():
+        obj = HowTo(
+            task = howto.task,
+            answer = markdown(howto.answer)
+        )
+        howtos.append(obj)
     context = {
-        "qas": qas
+        "qas": qas,
+        "howtos": howtos
     }
     return render(request, 'www/docs.html', context)
 

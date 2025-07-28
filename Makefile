@@ -44,6 +44,8 @@ dump:
 	DEBUG=1 ${python} -m json.tool data/blog_post.json data/blog_post.json
 	DEBUG=1 ${python} heliumos_website/manage.py dumpdata www.HardwareDevice > data/hardware_device.json
 	DEBUG=1 ${python} -m json.tool data/hardware_device.json data/hardware_device.json
+	DEBUG=1 ${python} heliumos_website/manage.py dumpdata www.HowTo > data/how_to.json
+	DEBUG=1 ${python} -m json.tool data/how_to.json data/how_to.json
 	DEBUG=1 ${python} heliumos_website/manage.py dumpdata www.QuestionAnswer > data/question_answer.json
 	DEBUG=1 ${python} -m json.tool data/question_answer.json data/question_answer.json
 	DEBUG=1 ${python} heliumos_website/manage.py dumpdata www.Release > data/release.json

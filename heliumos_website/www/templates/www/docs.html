@@ -30,14 +30,24 @@
             {% endfor %}
         </div>
     </section>
-    <section class="bg-base-200 p-20 flex justify-center">
-        <div class="text-center prose">
-            <h2 id="how-to">How-To</h2>
-            <p class="text-left">
-                Coming Soon!
-            </p>
+   <section class="bg-base-200 p-20 flex justify-center">
+        <div class="text-left prose sm:min-w-1/2 flex flex-grow flex-col gap-4">
+            <h2 id="how-to" class="text-center">How-To</h2>
+            {% for howto in howtos %}
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="checkbox"/>
+                <div class="collapse-title text-xl font-medium">
+                    {{ howto.task }}
+                </div>
+                <div class="collapse-content">
+                    <p>
+                        {{ howto.answer | safe }}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
         </div>
-    </section>
+    </section> 
     <section class="bg-base-100 p-20 flex justify-center">
         <div class="text-center prose">
             <h2>Learn More</h2>

@@ -51,6 +51,17 @@ class QuestionAnswer(models.Model):
     class Meta:
         ordering = ["order"]
 
+class HowTo(models.Model):
+    task = models.CharField(max_length=200)
+    answer = models.TextField(help_text="Markdown")
+    order = models.PositiveSmallIntegerField()
+
+    def __str__(self):
+        return f"{self.__class__.__name__}: {self.task}"
+
+    class Meta:
+        ordering = ["order"]
+
 class HardwareDevice(models.Model):
     vendor = models.CharField(max_length=200)
     name = models.CharField(max_length=200)

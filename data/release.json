@@ -32,5 +32,22 @@
             "file_size": 4.36,
             "release_date": "2025-01-14"
         }
+    },
+    {
+        "model": "www.release",
+        "pk": 3,
+        "fields": {
+            "version": "10",
+            "changelog": "N/A",
+            "download_url": "https://dl-heliumos.b-cdn.net/heliumos/releases/10/HeliumOS-10-x86_64-boot.iso",
+            "sha256": "0988f901f5b7723feca24fee7076cfe42a121126135436b33efe3cbc1c45b640",
+            "torrent_url": "about:blank",
+            "is_alpha": false,
+            "is_beta": false,
+            "is_featured": true,
+            "image_path": "/www/images/logo-color.svg",
+            "file_size": 3.7,
+            "release_date": "2025-07-28"
+        }
     }
 ]

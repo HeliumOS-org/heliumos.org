@@ -41,7 +41,7 @@
             "changelog": "N/A",
             "download_url": "https://dl-heliumos.b-cdn.net/heliumos/releases/10/HeliumOS-10-x86_64-boot.iso",
             "sha256": "0988f901f5b7723feca24fee7076cfe42a121126135436b33efe3cbc1c45b640",
-            "torrent_url": "about:blank",
+            "torrent_url": "https://dl-heliumos.b-cdn.net/heliumos/releases/10/HeliumOS-10-x86_64-boot.iso.torrent",
             "is_alpha": false,
             "is_beta": false,
             "is_featured": true,

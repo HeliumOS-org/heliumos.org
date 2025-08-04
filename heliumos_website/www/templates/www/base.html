@@ -29,15 +29,16 @@
                     <li>
                         <div class="btn-disabled">About</div>
                         <ul class="p-2">
-                            <li><a href="{% url 'docs' %}#faq">FAQ</a></li>
                             <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
                             <li><a href="https://codeberg.org/HeliumOS">Source Code</a></li>
                             <li><a href="{% url 'hardware' %}">Hardware</a></li>
+                            <li><a href="{% url 'press_kit' %}">Press Kit</a></li>
                         </ul>
                     </li>
                     <li>
                         <div class="btn-disabled">Help</div>
                         <ul class="p-2">
+                            <li><a href="{% url 'docs' %}#faq">FAQ</a></li>
                             <li><a href="{% url 'docs' %}#how-to">How-To</a></li>
                             <li><a href="https://chat.heliumos.org">Chat Support</a></li>
                             <li><a href="https://bugs.heliumos.org/">Bug Report</a></li>
@@ -57,10 +58,10 @@
                     <details>
                         <summary>About</summary>
                         <ul class="p-2">
-                            <li><a href="{% url 'docs' %}#faq">FAQ</a></li>
                             <li><a href="{% url 'roadmap' %}">Roadmap</a></li>
                             <li><a href="https://codeberg.org/HeliumOS">Source Code</a></li>
                             <li><a href="{% url 'hardware' %}">Hardware</a></li>
+                            <li><a href="{% url 'press_kit' %}">Press Kit</a></li>
                         </ul>
                     </details>
                 </li>
@@ -68,6 +69,7 @@
                     <details>
                         <summary>Help</summary>
                         <ul class="p-2 w-48">
+                            <li><a href="{% url 'docs' %}#faq">FAQ</a></li>
                             <li><a href="{% url 'docs' %}#how-to">How-To</a></li>
                             <li><a href="https://chat.heliumos.org">Chat Support</a></li>
                             <li><a href="https://bugs.heliumos.org/">Bug Report</a></li>
@@ -106,13 +108,14 @@
     </nav>
     <nav>
         <header class="footer-title">About</header>
-        <a class="link link-hover" href="{% url 'docs' %}#faq">FAQ</a>
         <a class="link link-hover" href="{% url 'roadmap' %}">Roadmap</a>
         <a class="link link-hover" href="https://codeberg.org/HeliumOS">Source Code</a>
         <a class="link link-hover" href="{% url 'hardware' %}">Hardware</a>
+        <a class="link link-hover" href="{% url 'press_kit' %}">Press Kit</a>
     </nav>
     <nav>
         <header class="footer-title">Help</header>
+        <a class="link link-hover" href="{% url 'docs' %}#faq">FAQ</a>
         <a class="link link-hover" href="{% url 'docs' %}#how-to">How-To</a>
         <a href="https://chat.heliumos.org" class="link link-hover">Chat Support</a>
         <a href="https://bugs.heliumos.org/" class="link link-hover">Bug Report</a>

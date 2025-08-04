@@ -35,4 +35,5 @@ urlpatterns = [
     distill_path("docs/", views.docs, name="docs"),
     distill_path("roadmap/", views.roadmap, name="roadmap"),
     distill_path("hardware/", views.hardware, name="hardware"),
+    distill_path("press-kit/", views.press_kit, name="press_kit")
 ]

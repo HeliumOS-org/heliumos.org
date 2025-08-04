@@ -107,3 +107,7 @@ def hardware(request):
         "devices": devices
     }
     return render(request, "www/hardware.html", context)
+
+def press_kit(request):
+    context = {}
+    return render(request, "www/press_kit.html", context)

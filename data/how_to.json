@@ -7,5 +7,14 @@
             "answer": "A recent version of Docker is available as part of the HeliumOS installation. However, there are a couple of steps needed to use Docker.\r\n\r\nFor rootful Docker:\r\n\r\nEnable the Docker Daemon using the terminal\r\n<br/>\r\n```\r\nsudo systemctl enable --now docker.service\r\n```\r\n\r\nNow you can use rootful Docker with `sudo docker ps` or similar commands. If you want to use rootful Docker without sudo, see the official [Docker Engine documentation](https://docs.docker.com/engine/install/linux-postinstall/) for more details.\r\n\r\nFor rootless Docker:\r\n\r\nRun the rootless Docker helper script\r\n<br/>\r\n```\r\ndockerd-rootless-setuptool.sh install\r\n```\r\n\r\nDocker containers managed using commands such as `docker ps` will now be rootless.",
             "order": 1
         }
+    },
+    {
+        "model": "www.howto",
+        "pk": 4,
+        "fields": {
+            "task": "How to check if my CPU is x86_64-v3 compatible?",
+            "answer": "On an existing Linux system, run the following command:\r\n\r\n```bash\r\n/lib64/ld-linux-x86-64.so.2 --help | grep 'x86-64-v3 (supported, searched)'\r\n```\r\n\r\nIf that command returns output of `x86-64-v3 (supported, searched)`, then your system is x86_64-v3 compatible. If the output of the command is blank, then your device is unfortunately incompatible with x86_64-v3 and HeliumOS 10.",
+            "order": 2
+        }
     }
 ]

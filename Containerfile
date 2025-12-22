@@ -1,4 +1,4 @@
-FROM quay.io/almalinuxorg/9-base
+FROM quay.io/almalinuxorg/10-base
 
 WORKDIR /build
 
@@ -11,7 +11,7 @@ RUN dnf install -y \
 
 RUN python3 -m pip install uv
 
-RUN uv python install 3.12
+RUN uv python install 3.14
 
 COPY . .
 

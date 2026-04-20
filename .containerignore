@@ -1,4 +1,5 @@
-.venv
+.*
+Containerfile
 dist
 node_modules
 heliumos_website/db.sqlite3

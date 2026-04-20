@@ -4,6 +4,7 @@ uv ?= uv
 
 help:
 	@echo make help - display this message
+	@echo make check - check deployment
 	@echo make devpy - run dev server \(watch\)
 	@echo make devcss - run tailwind build \(watch\)
 	@echo make build - build for production
@@ -13,6 +14,9 @@ help:
 	@echo make migrate - migrate db
 	@echo make dump - dump data from db to json files
 	@echo make load - load data to db from json files
+
+check: # https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/#run-manage-py-check-deploy
+	${python} heliumos_website/manage.py check --deploy
 
 devpy:
 	${python} heliumos_website/manage.py runserver
@@ -27,7 +31,6 @@ build:
 
 deps:
 	${uv} pip compile pyproject.toml -o requirements.txt --generate-hashes
-
 
 sync:
 	${uv} pip sync requirements.txt

@@ -2,16 +2,20 @@
 name = "heliumos-website"
 version = "0.1.0"
 dependencies = [
-    "django==5",
+    "django==6",
     "django-distill>=3.2",
-    "django-extensions==3",
-    "markdown==3.6",
+    "django-extensions==4.1",
+    "markdown==3.10",
     "whitenoise"
 ]
 
 [build-system]
-requires = ["setuptools >= 61.0"]
+requires = ["setuptools >= 80.0"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["heliumos_website*"]
 
 [tool.pyright]
 venvPath = "."
